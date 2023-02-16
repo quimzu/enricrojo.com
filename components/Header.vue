@@ -18,6 +18,9 @@
               {{ $prismic.asText(item.label ) }}
             </PrismicLink>
           </li>
+          <li><a href="/projecte">
+            Projectes
+          </a></li>
           <li
             v-for="lang in alternateLanguages"
             :key="lang.lang"

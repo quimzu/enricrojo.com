@@ -1,0 +1,44 @@
+{
+  "id": "projectes",
+  "label": "Projectes",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "titol_projecte": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Títol Projecte",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        }
+      },
+      "codi_projecte": {
+        "type": "Text",
+        "config": {
+          "label": "Codi Projecte",
+          "placeholder": ""
+        }
+      },
+      "descripcio_projecte": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Descripció Projecte",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        }
+      },
+      "cos": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Cos",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        }
+      }
+    }
+  }
+}
