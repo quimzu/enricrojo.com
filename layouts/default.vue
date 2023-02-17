@@ -1,6 +1,6 @@
 <template>
   <div class="text-slate-800">
-  
+  <h2>Titulo h2</h2>
     <Header
       v-if="navigation.data && settings.data"
       :alternate-languages="alternateLanguages"
