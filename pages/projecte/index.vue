@@ -1,5 +1,6 @@
 <template>
     <main>
+      <h3>AAAAAA</h3>
       <SliceZone :slices="page.data.slices" :components="components" />
       <h1>Proyecto Boira</h1>
         <template v-for="post in posts">
@@ -15,7 +16,7 @@ import { components } from '~/slices'
   
     
     
-    async asyncData({ $prismic, error , params, i18n}) {
+    async asyncData({ $prismic, store, error , params, i18n}) {
       // Query last posts
       const lang = i18n.locale
       const page = await $prismic.api.getByUID('page', 'home', { lang })
@@ -23,6 +24,8 @@ import { components } from '~/slices'
             $prismic.predicate.at('document.type', 'projectes'),
             {lang}
       )
+      await store.dispatch('prismic/load', { lang, page })
+
       
 
       // Returns data to be used in template 
