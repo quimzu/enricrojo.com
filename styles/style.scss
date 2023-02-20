@@ -1,3 +1,35 @@
-body{
-    color: red;
+
+h1{
+    text-align: center;
+}
+header{
+    div{
+        div{
+            a.link_logo{
+                display: flex;
+                justify-content: center;
+                .logo_principal{
+                    width: 250px;
+                }
+            }
+        }
+    }
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .projecte{
+        flex-basis: 20%;
+        text-align: center;
+        .img_projecte{
+            margin: 0;
+            img{
+                width: 250px;
+                height: 250px;
+            }
+            
+        }
+    }
 }

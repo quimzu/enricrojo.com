@@ -5,6 +5,14 @@
   "status": true,
   "json": {
     "Main": {
+      "imatge_destacada": {
+        "type": "Image",
+        "config": {
+          "label": "Imatge Destacada",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
       "titol_projecte": {
         "type": "StructuredText",
         "config": {

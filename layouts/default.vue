@@ -8,7 +8,7 @@
       :settings="settings"
     />
     <main><nuxt /></main>
-    <Footer v-if="settings.data" :settings="settings" />
+    
   </div>
 </template>
 

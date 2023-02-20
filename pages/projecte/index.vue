@@ -1,11 +1,17 @@
 <template>
     <main>
-      <h3>AAAAAA</h3>
-      <SliceZone :slices="page.data.slices" :components="components" />
       <h1>Proyecto Boira</h1>
+      <section>
         <template v-for="post in posts">
-            <h2><a :href="$route.path + '/' + post.slugs[0]">{{ post.data.titol_projecte[0].text }}</a></h2>
+          <div class="projecte"><a :href="$route.path + '/' + post.slugs[0]">
+            <figure class="img_projecte">
+              <img :src="post.data.imatge_destacada.url">
+            </figure>
+            <h2>{{ post.data.titol_projecte[0].text }}</h2>
+            <p>{{ post.data.codi_projecte }}</p>
+          </a></div>
         </template>
+      </section>
     </main>
   </template>
   
