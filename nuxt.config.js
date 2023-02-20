@@ -57,6 +57,7 @@ export default async () => {
     // Global CSS: https://go.nuxtjs.dev/config-css
     css: [
       '@/styles/global.css',
+      '@/styles/style.scss',
     ],
 
     // Auto import components: https://go.nuxtjs.dev/config-components
