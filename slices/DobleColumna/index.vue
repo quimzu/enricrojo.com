@@ -1,5 +1,6 @@
 <template>
   <section class="section">
+    <h1>DOBLE COLUMNA</h1>
     <PrismicRichText :field="slice.primary.title" class="title" />
     <PrismicRichText :field="slice.primary.description" />
   </section>

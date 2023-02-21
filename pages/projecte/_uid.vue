@@ -1,12 +1,11 @@
 <template>
     <main>
         <h2>{{post.data.titol_projecte[0].text}}</h2>
-        <SliceZone
-            :slices="post.data.slices"
-            :components="{
-            text_slice: Slider,
-            }"
-        />
+
+
+        <SliceZone :slices="post.data.slices" :components="components" />
+
+
       <!--  <template v-if="post.data.slices[0].items[0] != null">
         <div class='slideshow-container'>
           <template v-for="img in post.data.slices[0].items ">
@@ -23,7 +22,8 @@
 </template>
   
 <script>
-import Slider from '/slices/Slider'
+
+import { components } from '~/slices'
 
 export default {
     async asyncData({ $prismic, $content, params,  i18n, store }) {
@@ -34,8 +34,11 @@ export default {
 
         return {
             post,
-            Slider
+            
         };
+    },
+    data () {
+     return { components }
     },
     layout: 'default',
     head() {
