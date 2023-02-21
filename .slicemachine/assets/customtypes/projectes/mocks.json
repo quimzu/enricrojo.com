@@ -1,15 +1,19 @@
 {
+  "uid": {
+    "__TYPE__": "UIDContent",
+    "value": "square"
+  },
   "imatge_destacada": {
     "__TYPE__": "ImageContent",
     "origin": {
       "id": "main",
-      "url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f",
-      "width": 6597,
-      "height": 4398
+      "url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1",
+      "width": 5616,
+      "height": 3744
     },
-    "url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f",
-    "width": 6597,
-    "height": 4398,
+    "url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1",
+    "width": 5616,
+    "height": 3744,
     "edit": {
       "zoom": 1,
       "crop": {
@@ -26,14 +30,14 @@
       {
         "type": "paragraph",
         "content": {
-          "text": "Ut deserunt cillum magna veniam in in magna duis nulla ullamco incididunt ex. Nisi ipsum quis labore nostrud cupidatat culpa adipisicing aute sunt magna ex laborum magna sunt."
+          "text": "Elit excepteur et ex aute culpa sunt."
         }
       }
     ]
   },
   "codi_projecte": {
     "__TYPE__": "FieldContent",
-    "value": "differ",
+    "value": "order",
     "type": "Text"
   },
   "descripcio_projecte": {
@@ -42,7 +46,7 @@
       {
         "type": "paragraph",
         "content": {
-          "text": "Id eiusmod sunt ullamco in non cillum commodo et officia irure. Veniam labore minim deserunt sit veniam sunt mollit dolore sint do qui."
+          "text": "Eiusmod mollit aute tempor incididunt veniam adipisicing nostrud irure."
         }
       }
     ]
@@ -53,7 +57,105 @@
       {
         "type": "paragraph",
         "content": {
-          "text": "Quis occaecat minim anim dolore sit. Veniam sunt in duis."
+          "text": "Proident aliqua magna veniam ea veniam est ea cillum aliqua excepteur in qui magna magna sunt."
+        }
+      }
+    ]
+  },
+  "slices": {
+    "__TYPE__": "SliceContentType",
+    "value": [
+      {
+        "key": "slider$259752e0-fe29-4a99-9bae-f02b794439c7",
+        "name": "slider",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {},
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": [
+                [
+                  "imatge",
+                  {
+                    "__TYPE__": "ImageContent",
+                    "origin": {
+                      "id": "main",
+                      "url": "https://images.unsplash.com/photo-1586952518485-11b180e92764",
+                      "width": 4172,
+                      "height": 4000
+                    },
+                    "url": "https://images.unsplash.com/photo-1586952518485-11b180e92764",
+                    "width": 4172,
+                    "height": 4000,
+                    "edit": {
+                      "zoom": 1,
+                      "crop": {
+                        "x": 0,
+                        "y": 0
+                      },
+                      "background": "transparent"
+                    },
+                    "thumbnails": {}
+                  }
+                ]
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "key": "doble_columna$9e088be3-8902-4df7-ba45-16488049cc33",
+        "name": "doble_columna",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "orientacio_imatge": {
+              "__TYPE__": "FieldContent",
+              "value": "Dreta",
+              "type": "Select"
+            },
+            "imatge": {
+              "__TYPE__": "ImageContent",
+              "origin": {
+                "id": "main",
+                "url": "https://images.unsplash.com/photo-1560457079-9a6532ccb118",
+                "width": 4160,
+                "height": 3120
+              },
+              "url": "https://images.unsplash.com/photo-1560457079-9a6532ccb118",
+              "width": 4160,
+              "height": 3120,
+              "edit": {
+                "zoom": 1,
+                "crop": {
+                  "x": 0,
+                  "y": 0
+                },
+                "background": "transparent"
+              },
+              "thumbnails": {}
+            },
+            "text": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Eiusmod eiusmod elit exercitation cupidatat non ullamco sint veniam do."
+                  }
+                }
+              ]
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": []
+            }
+          ]
         }
       }
     ]

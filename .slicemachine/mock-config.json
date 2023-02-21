@@ -132,6 +132,16 @@
       "withButton": {
         "primary": {}
       }
+    },
+    "Slider": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "DobleColumna": {
+      "default": {
+        "primary": {}
+      }
     }
   }
 }

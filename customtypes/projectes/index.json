@@ -5,6 +5,13 @@
   "status": true,
   "json": {
     "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "uid",
+          "placeholder": ""
+        }
+      },
       "imatge_destacada": {
         "type": "Image",
         "config": {
@@ -45,6 +52,20 @@
           "placeholder": "",
           "allowTargetBlank": true,
           "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "slider": {
+              "type": "SharedSlice"
+            },
+            "doble_columna": {
+              "type": "SharedSlice"
+            }
+          }
         }
       }
     }
