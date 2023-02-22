@@ -76,7 +76,7 @@ export default async () => {
       endpoint: sm.apiEndpoint,
       modern: true,
       linkResolver: (doc) => {
-        const prefix = doc.lang === 'en-us' ? '' : `/${doc.lang}`
+        const prefix = doc.lang === 'ca' ? '' : `/${doc.lang}`
 
         switch (doc.type) {
           case 'page':
