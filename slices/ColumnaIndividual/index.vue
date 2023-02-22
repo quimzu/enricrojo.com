@@ -1,13 +1,7 @@
 <template>
-  <section class="doble_col">
-    <template v-if="slice.primary.orientacio_imatge == 'Dreta'">
-      <div class="texto_2col">
-        <PrismicRichText :field="slice.primary.text" />
-      </div>
-      <figure>
-        <PrismicImage :field="slice.primary.imatge" />
-      </figure>
-    </template>
+  <section class="section">
+    <PrismicRichText :field="slice.primary.title" class="title" />
+    <PrismicRichText :field="slice.primary.description" />
   </section>
 </template>
 
@@ -15,7 +9,7 @@
 import { getSliceComponentProps } from "@prismicio/vue/components";
 
 export default {
-  name: "DobleColumna",
+  name: "ColumnaIndividual",
   // The array passed to `getSliceComponentProps` is purely optional and acts as a visual hint for you
   props: getSliceComponentProps(["slice", "index", "slices", "context"]),
 }

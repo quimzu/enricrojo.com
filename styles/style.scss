@@ -83,3 +83,17 @@ section{
   .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
   }
+
+//Doble Columna
+
+section.doble_col{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    div.texto_2col{
+        flex-basis: 30%;
+    }
+    figure{
+        flex-basis: 30%;
+    }
+}
