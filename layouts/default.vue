@@ -6,15 +6,18 @@
       :alternate-languages="alternateLanguages"
       :navigation="navigation"
       :settings="settings"
-      :menuXarxes="menuXarxes"
+
     />
+
     <main><nuxt /></main>
     
   </div>
 </template>
 
 <script>
+import Header from '~/components/Header.vue'
 export default {
+  components: { Header },
   computed: {
     alternateLanguages () {
       return this.$store.state.prismic.alternateLanguages

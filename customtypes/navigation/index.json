@@ -8,7 +8,7 @@
       "links": {
         "type": "Group",
         "config": {
-          "label": "Links",
+          "label": "Main menu",
           "fields": {
             "label": {
               "type": "StructuredText",

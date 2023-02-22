@@ -118,20 +118,23 @@
               {{ $prismic.asText(item.label ) }}
             </PrismicLink>
           </li>
-          <li><a href="/projecte">
-            Projectes
-          </a></li>
-          <li
+
+         
+        </ul>
+      </nav>
+
+	  <ul>
+		<h2>idioma</h2>
+		<li
             v-for="lang in alternateLanguages"
             :key="lang.lang"
           >
             <PrismicLink :field="{ ...lang, link_type: 'Document' }">
               <span class="sr-only">{{ lang.lang }}</span>
-              <span class="fi" :class="`fi-${lang.lang.substring(3).toLowerCase()}`">{{ lang.lang }}</span>
+              <span class="fi" :class="`fi-${lang.lang.substring(2).toLowerCase()}`">{{ lang.lang }}</span>
             </PrismicLink>
           </li>
-        </ul>
-      </nav>
+	  </ul>
     </div>
   </Bounded>
 </template>
