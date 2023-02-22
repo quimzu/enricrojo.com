@@ -1,6 +1,5 @@
 <template>
-  <section class="section">
-    <h1>SLIDER</h1>
+  <section class="slider">
         <div class='slideshow-container'>
           <template v-for="(item, i) in slice.items">
             <div class="mySlides fade">

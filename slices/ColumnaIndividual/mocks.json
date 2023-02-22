@@ -3,24 +3,13 @@
     "__TYPE__": "SharedSliceContent",
     "variation": "default",
     "primary": {
-      "title": {
-        "__TYPE__": "StructuredTextContent",
-        "value": [
-          {
-            "type": "heading1",
-            "content": {
-              "text": "Copper"
-            }
-          }
-        ]
-      },
-      "description": {
+      "columna": {
         "__TYPE__": "StructuredTextContent",
         "value": [
           {
             "type": "paragraph",
             "content": {
-              "text": "Culpa ut enim eiusmod mollit sint qui in sunt amet laborum nisi."
+              "text": "Ea adipisicing velit laboris incididunt ea culpa esse consectetur qui esse aute laborum voluptate ullamco excepteur. Nisi minim excepteur tempor magna minim proident excepteur. Et est consectetur reprehenderit consequat cillum consectetur consectetur ullamco velit duis in cupidatat."
             }
           }
         ]

@@ -143,6 +143,17 @@
         "primary": {}
       }
     },
-    "ColumnaIndividual": {}
+    "ColumnaIndividual": {
+      "default": {
+        "primary": {
+          "columna": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    }
   }
 }
