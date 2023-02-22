@@ -6,6 +6,7 @@
       :alternate-languages="alternateLanguages"
       :navigation="navigation"
       :settings="settings"
+      :menuXarxes="menuXarxes"
     />
     <main><nuxt /></main>
     
@@ -23,6 +24,9 @@ export default {
     },
     settings () {
       return this.$store.state.prismic.settings
+    },
+    settings () {
+      return this.$store.state.prismic.menuXarxes
     }
   }
 }

@@ -150,6 +150,10 @@ export default {
     alternateLanguages: {
       type: Array,
       default: () => []
+    },
+	menuXarxes: {
+      type: Array,
+      default: () => []
     }
   }
 }

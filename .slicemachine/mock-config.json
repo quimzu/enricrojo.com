@@ -46,7 +46,10 @@
         }
       }
     },
-    "projectes": {}
+    "projectes": {},
+    "menu_xarxes": {
+      "links": {}
+    }
   },
   "slices": {
     "Text": {
