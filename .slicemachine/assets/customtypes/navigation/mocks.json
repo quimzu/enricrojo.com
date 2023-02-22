@@ -13,7 +13,7 @@
                 {
                   "type": "heading3",
                   "content": {
-                    "text": "Bring"
+                    "text": "Service"
                   }
                 }
               ]
@@ -25,7 +25,7 @@
               "__TYPE__": "LinkContent",
               "value": {
                 "__TYPE__": "ExternalLink",
-                "url": "https://slicemachine.dev"
+                "url": "https://prismic.io"
               }
             }
           ]

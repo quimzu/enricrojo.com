@@ -1,6 +1,11 @@
 <template>
     <main>
-        <h2>{{post.data.titol_projecte[0].text}}</h2>
+        <PrismicRichText :field="post.data.titol_projecte" />
+
+        <PrismicImage :field="post.data.imatge_destacada" />
+
+        <span>{{ post.data.codi_projecte }}</span>
+        <PrismicRichText :field="post.data.descripcio_projecte" />
 
 
         <SliceZone :slices="post.data.slices" :components="components" />
@@ -26,31 +31,21 @@
 import { components } from '~/slices'
 
 export default {
-    async asyncData({ $prismic, $content, params,  i18n, store }) {
+    async asyncData ({ $prismic, params, store, i18n }) {
         const lang = i18n.locale
-        
         const post = await $prismic.api.getByUID("projectes", params.uid, { lang });
         await store.dispatch('prismic/load', { lang, post })
-
         return {
-            post,
-            
+            post
         };
     },
     data () {
      return { components }
     },
-    layout: 'default',
-    head() {
-        return{
-            script: [
-                {
-                    src: "/slider.js",
-                    body: true
-                }
-            ]
-        }
-        
+    head () {
+    return {
+      title: `${this.$prismic.asText(this.post.data.title)} | ${this.$prismic.asText(this.$store.state.prismic.settings.data.siteTitle)}`
     }
+  }
 }
 </script>

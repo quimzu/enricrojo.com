@@ -1,8 +1,7 @@
 export const state = () => ({
   alternateLanguages: [],
   settings: {},
-  navigation: {},
-  menuXarxes: {}
+  navigation: {}
 })
 
 export const mutations = {
@@ -14,9 +13,6 @@ export const mutations = {
   },
   setNavigation (state, navigation) {
     state.navigation = navigation
-  },
-  setMenuXarxes (state, menuXarxes) {
-    state.menuXarxes = menuXarxes
   }
 }
 
@@ -24,9 +20,8 @@ export const actions = {
   async load (store, { lang, page = { alternate_languages: [] } }) {
     const navigation = await this.$prismic.api.getSingle('navigation', { lang })
     const settings = await this.$prismic.api.getSingle('settings', { lang })
-    const menuXarxes = await this.$prismic.api.getSingle('menu_xarxes', { lang })
     store.commit('setNavigation', navigation)
     store.commit('setSettings', settings)
-    store.commit('setMenuXarxes', menuXarxes)
+    store.commit('setAlternateLanguages', page.alternate_languages)
   }
 }

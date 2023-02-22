@@ -15,9 +15,7 @@
 </template>
 
 <script>
-import Header from '~/components/Header.vue'
 export default {
-  components: { Header },
   computed: {
     alternateLanguages () {
       return this.$store.state.prismic.alternateLanguages
@@ -27,16 +25,8 @@ export default {
     },
     settings () {
       return this.$store.state.prismic.settings
-    },
-    settings () {
-      return this.$store.state.prismic.menuXarxes
     }
   }
 }
 </script>
 
-<style>
-body {
-  @apply overflow-x-hidden antialiased;
-}
-</style>

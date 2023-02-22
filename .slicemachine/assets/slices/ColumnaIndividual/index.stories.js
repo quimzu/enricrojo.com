@@ -18,7 +18,7 @@ export const _Default = () => ({
   },
   data() {
     return {
-      mock: {"variation":"default","version":"sktwi1xtmkfgx8626","items":[{}],"primary":{"columna":[{"type":"paragraph","text":"Ea adipisicing velit laboris incididunt ea culpa esse consectetur qui esse aute laborum voluptate ullamco excepteur. Nisi minim excepteur tempor magna minim proident excepteur. Et est consectetur reprehenderit consequat cillum consectetur consectetur ullamco velit duis in cupidatat.","spans":[]}]},"id":"_Default","slice_type":"columna_individual"}
+      mock: {"variation":"default","version":"sktwi1xtmkfgx8626","items":[{}],"primary":{"columna":[{"type":"paragraph","text":"Mollit ea sint cupidatat aliquip aute exercitation est aute proident nostrud laborum non eu velit amet.","spans":[]}]},"id":"_Default","slice_type":"columna_individual"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'

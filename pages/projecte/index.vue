@@ -1,6 +1,8 @@
 <template>
     <main>
-      <h1>Proyecto Boira</h1>
+      <h1 v-if="page.lang == 'ca'">Projectes</h1>
+      <h1 v-if="page.lang == 'es'">Proyectos</h1>
+     
       <section>
         <template v-for="post in posts">
           <div class="projecte"><a :href="$route.path + '/' + post.slugs[0]">
@@ -25,7 +27,7 @@ import { components } from '~/slices'
     async asyncData({ $prismic, store, error , params, i18n}) {
       // Query last posts
       const lang = i18n.locale
-      const page = await $prismic.api.getByUID('page', 'home', { lang })
+      const page = await $prismic.api.getByUID('page', 'projecte', { lang })
         const posts = await $prismic.api.query(
             $prismic.predicate.at('document.type', 'projectes'),
             {lang}
@@ -44,7 +46,11 @@ import { components } from '~/slices'
     data () {
     return { components }
     },
-    layout: 'default'
+    head () {
+    return {
+      title: `${this.$prismic.asText(this.page.data.title)} | ${this.$prismic.asText(this.$store.state.prismic.settings.data.siteTitle)}`
+    }
+  }
   }
   </script>
   
