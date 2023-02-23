@@ -29,6 +29,31 @@
             }
           }
         }
+      },
+      "xxss_menu": {
+        "type": "Group",
+        "config": {
+          "label": "XXSS Menú",
+          "fields": {
+            "link_xxss": {
+              "type": "Link",
+              "config": {
+                "label": "Link XXSS",
+                "placeholder": "",
+                "select": null
+              }
+            },
+            "nom_xxss": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Nom XXSS",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+              }
+            }
+          }
+        }
       }
     }
   }

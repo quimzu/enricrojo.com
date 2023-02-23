@@ -1,7 +1,7 @@
 <template>
     <main>
       <h1 v-if="page.lang == 'ca'">Projectes</h1>
-      <h1 v-if="page.lang == 'es'">Proyectos</h1>
+      <h1 v-if="page.lang == 'es-es'">Proyectos</h1>
      
       <section>
         <template v-for="post in posts">

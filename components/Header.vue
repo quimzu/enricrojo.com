@@ -11,9 +11,9 @@
             :key="$prismic.asText(item.label)"
             class="font-semibold tracking-tight text-slate-800"
           >
-            <PrismicLink :field="item.link">
-              {{ $prismic.asText(item.label ) }}
-            </PrismicLink>
+              <PrismicLink :field="item.link">
+                {{ $prismic.asText(item.label ) }}
+              </PrismicLink>
           </li>
 
          

@@ -10,7 +10,17 @@
 
         <SliceZone :slices="post.data.slices" :components="components" />
 
-
+        <ul>
+		<h2>idioma</h2>
+		<li
+            v-for="lang in alternateLanguages"
+            :key="lang.lang"
+          >
+            <PrismicLink :field="{ ...lang, link_type: 'Document' }">
+              <span class="sr-only">{{ lang.lang }}</span>
+            </PrismicLink>
+          </li>
+	  </ul>
       <!--  <template v-if="post.data.slices[0].items[0] != null">
         <div class='slideshow-container'>
           <template v-for="img in post.data.slices[0].items ">

@@ -13,7 +13,7 @@
                 {
                   "type": "heading3",
                   "content": {
-                    "text": "Service"
+                    "text": "Vertical"
                   }
                 }
               ]
@@ -25,8 +25,42 @@
               "__TYPE__": "LinkContent",
               "value": {
                 "__TYPE__": "ExternalLink",
+                "url": "http://twitter.com"
+              }
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  "xxss_menu": {
+    "__TYPE__": "GroupContentType",
+    "value": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": [
+          [
+            "link_xxss",
+            {
+              "__TYPE__": "LinkContent",
+              "value": {
+                "__TYPE__": "ExternalLink",
                 "url": "https://prismic.io"
               }
+            }
+          ],
+          [
+            "nom_xxss",
+            {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Excepteur deserunt ut adipisicing commodo nisi dolor reprehenderit fugiat cillum pariatur. Elit exercitation et amet ad."
+                  }
+                }
+              ]
             }
           ]
         ]
