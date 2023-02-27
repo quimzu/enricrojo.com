@@ -4,9 +4,15 @@
       "default": {
         "primary": {}
       }
+    },
+    "OberturaHome": {
+      "default": {
+        "primary": {}
+      }
     }
   },
   "_cts": {
-    "navigation": {}
+    "navigation": {},
+    "page": {}
   }
 }

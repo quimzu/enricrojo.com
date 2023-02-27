@@ -13,7 +13,7 @@
                 {
                   "type": "heading3",
                   "content": {
-                    "text": "Vertical"
+                    "text": "Nearer"
                   }
                 }
               ]
@@ -25,7 +25,7 @@
               "__TYPE__": "LinkContent",
               "value": {
                 "__TYPE__": "ExternalLink",
-                "url": "http://twitter.com"
+                "url": "https://slicemachine.dev"
               }
             }
           ]
@@ -57,13 +57,111 @@
                 {
                   "type": "paragraph",
                   "content": {
-                    "text": "Excepteur deserunt ut adipisicing commodo nisi dolor reprehenderit fugiat cillum pariatur. Elit exercitation et amet ad."
+                    "text": "Nostrud aliquip consectetur non. Nulla incididunt magna est adipisicing proident sit enim ut ex non elit."
                   }
                 }
               ]
             }
           ]
         ]
+      }
+    ]
+  },
+  "contacte_menu": {
+    "__TYPE__": "GroupContentType",
+    "value": [
+      {
+        "__TYPE__": "GroupItemContent",
+        "value": [
+          [
+            "link_contacte",
+            {
+              "__TYPE__": "LinkContent",
+              "value": {
+                "__TYPE__": "ExternalLink",
+                "url": "http://google.com"
+              }
+            }
+          ],
+          [
+            "nom_contacte",
+            {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Laboris voluptate et ullamco occaecat quis enim nulla esse exercitation excepteur. Dolor minim elit magna fugiat Lorem deserunt eu. Magna amet officia Lorem dolor mollit commodo exercitation."
+                  }
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    ]
+  },
+  "slices": {
+    "__TYPE__": "SliceContentType",
+    "value": [
+      {
+        "key": "obertura_home$898b7928-ec1b-4786-afaa-6582b6ee4bfe",
+        "name": "obertura_home",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "parrafo_izquierda": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Eu tempor mollit commodo."
+                  }
+                }
+              ]
+            },
+            "imagen": {
+              "__TYPE__": "ImageContent",
+              "origin": {
+                "id": "main",
+                "url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5",
+                "width": 5848,
+                "height": 3899
+              },
+              "url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5",
+              "width": 5848,
+              "height": 3899,
+              "edit": {
+                "zoom": 1,
+                "crop": {
+                  "x": 0,
+                  "y": 0
+                },
+                "background": "transparent"
+              },
+              "thumbnails": {}
+            },
+            "parrafo_derecha": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Aliqua cillum dolor anim cillum qui do dolore. Ad in veniam nostrud mollit dolore aute tempor exercitation fugiat duis aliqua eiusmod labore aliqua irure. Amet incididunt reprehenderit do dolor nulla."
+                  }
+                }
+              ]
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": []
+            }
+          ]
+        }
       }
     ]
   }

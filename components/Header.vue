@@ -20,17 +20,43 @@
         </ul>
       </nav>
 
-	  <ul>
-		<h2>idioma</h2>
-		<li
-            v-for="lang in alternateLanguages"
-            :key="lang.lang"
-          >
-            <PrismicLink :field="{ ...lang, link_type: 'Document' }">
-              <span class="sr-only">{{ lang.lang }}</span>
-            </PrismicLink>
-          </li>
+	  
+    <ul>
+      <template v-if="alternateLanguages[0].lang == 'es-es'">
+        <li>
+          <nuxt-link to="/">
+            <span class="activo sr-only">CA</span>
+          </nuxt-link>
+        </li>
+        <li>
+          <nuxt-link to="/es-es">
+            <span class="sr-only">ES</span>
+          </nuxt-link>
+        </li>
+      </template>
+      <template v-else>
+        <li>
+          <nuxt-link to="/">
+            <span class="sr-only">CA</span>
+          </nuxt-link>
+        </li>
+        <li>
+          <nuxt-link to="/es-es">
+            <span class="activo sr-only">ES</span>
+          </nuxt-link>
+        </li>
+      </template>
 	  </ul>
+    
+  <!--   <h2>Redes Sociales</h2>
+      <ul>
+      <li v-for="xxss in navigation.data.xxss_menu">
+        <PrismicLink :field="xxss.link_xxss">
+          <span>{{ xxss.nom_xxss[0].text }}</span>
+        </PrismicLink>
+      </li>
+    </ul>
+    -->
     </div>
   </Bounded>
 </template>

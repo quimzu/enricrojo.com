@@ -20,8 +20,18 @@
           "allowTargetBlank": false,
           "single": "heading1"
         }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "obertura_home": {
+              "type": "SharedSlice"
+            }
+          }
+        }
       }
-
     }
   }
 }

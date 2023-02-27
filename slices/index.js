@@ -2,16 +2,19 @@
 
 import ColumnaIndividual from './ColumnaIndividual';
 import DobleColumna from './DobleColumna';
+import OberturaHome from './OberturaHome';
 import Slider from './Slider';
 
 export {
 	ColumnaIndividual,
 	DobleColumna,
+	OberturaHome,
 	Slider,
 };
 
 export const components = {
 	columna_individual: ColumnaIndividual,
 	doble_columna: DobleColumna,
+	obertura_home: OberturaHome,
 	slider: Slider,
 };

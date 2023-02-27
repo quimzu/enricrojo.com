@@ -1,7 +1,13 @@
 
+ @font-face {
+    font-family: "Manrope";
+    src: url('/font/Manrope-Regular.ttf');
+ }
+
+ body{
+    font-family: "Manrope";
+ }
 main{
-    max-width: 930px;
-    margin: auto;
     section{
         margin: 100px 0;
     }
@@ -12,11 +18,54 @@ h1{
 header{
     div{
         div{
+            margin: 70px 60px 40px 60px;
+            display: flex;
+            justify-content: space-between;
             a.link_logo{
                 display: flex;
                 justify-content: center;
                 .logo_principal{
                     width: 250px;
+                }
+            }
+            nav{
+                ul{
+                    list-style-type: none;
+                    display: flex;
+                    padding: 0;
+                    li{
+                        &:first-child{
+                            margin-right: 50px;
+                            
+                        }
+                        a{
+                            color: #3E3E3E;
+                            text-decoration: none;
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+            ul{
+                list-style-type: none;
+                li{
+                    a{
+                        text-decoration: none;
+                        color: #3E3E3E;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                        span{
+                            padding-left: 20px;
+                            &.activo{
+                                background-image: url(../assets/flechita.svg);
+                                background-repeat: no-repeat;
+                                background-position-y: 5px;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -107,4 +156,69 @@ section.doble_col{
         }
     }
    
+}
+
+.xarxes_vertical{
+    position: absolute;
+    text-orientation: upright;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    left: 0;
+    bottom: 30%;
+    ul{
+        display: flex;
+        list-style-type: none;
+        li{
+            padding: 0;
+            margin-top: 40px;
+            a{
+                color: #3E3E3E;
+                text-decoration: none;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+.contactes_vertical{
+    position: absolute;
+    text-orientation: upright;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    right: 0;
+    bottom: 30%;
+    ul{
+        display: flex;
+        list-style-type: none;
+        li{
+            padding: 0;
+            margin-top: 40px;
+            a{
+                color: #3E3E3E;
+                text-decoration: none;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+.obertura{
+    display: flex;
+    flex-wrap: wrap;
+    div{
+        align-self: center;
+        flex-basis: 10%;
+        &:first-child{
+            margin-right: 90px;
+        }
+        &:last-child{
+            margin-left: 90px;
+        }
+    }
+    img{
+        flex-basis: 10%;
+    }
 }
