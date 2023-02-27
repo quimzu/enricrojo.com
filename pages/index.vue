@@ -16,7 +16,8 @@ export default {
     }
   },
   data () {
-    return { components }
+    return { components 
+    }
   },
   head () {
     return {

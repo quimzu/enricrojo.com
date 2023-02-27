@@ -2,7 +2,7 @@
   <div class="text-slate-800">
   
     <Header
-      v-if="navigation.data && settings.data"
+
       :alternate-languages="alternateLanguages"
       :navigation="navigation"
       :settings="settings"
