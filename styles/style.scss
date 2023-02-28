@@ -8,9 +8,13 @@
     font-family: "Manrope";
  }
 main{
-    section{
-        margin: 100px 0;
+    .obertura_1col{
+        display: flex;
+        section{
+            margin: 50px 0;
+        }
     }
+    
 }
 h1{
     text-align: center;
@@ -18,10 +22,12 @@ h1{
 header{
     div{
         div{
-            margin: 70px 60px 40px 60px;
+            margin: 40px 60px 40px 60px;
             display: flex;
             justify-content: space-between;
-            a.link_logo{
+            position: relative;
+            a{
+                z-index: 1;
                 display: flex;
                 justify-content: center;
                 .logo_principal{
@@ -29,14 +35,21 @@ header{
                 }
             }
             nav{
+                align-self: center;
+                position: absolute;
+                width: 100%;
+                display: flex;
+                justify-content: center;
                 ul{
                     list-style-type: none;
                     display: flex;
                     padding: 0;
                     li{
-                        &:first-child{
-                            margin-right: 50px;
-                            
+                        &:not(:first-child){
+                            background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iMSIgdmlld0JveD0iMCAwIDYwIDEiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxsaW5lIHkxPSIwLjUiIHgyPSI2MCIgeTI9IjAuNSIgc3Ryb2tlPSIjM0UzRTNFIi8+Cjwvc3ZnPgo=);
+                            background-repeat: no-repeat;
+                            background-position: 20px center;
+                            padding-left: 100px;
                         }
                         a{
                             color: #3E3E3E;
@@ -49,6 +62,7 @@ header{
                 }
             }
             ul{
+                z-index: 1;
                 list-style-type: none;
                 li{
                     a{
@@ -102,12 +116,7 @@ section{
   
   /* Hide the images by default */
   .mySlides {
-    &:nth-child(1){
-        display: none;
-    }
-    img{
-      border-radius: 50px;
-    }
+    
   }
 
 /* Next & previous buttons */
@@ -159,19 +168,31 @@ section.doble_col{
 }
 
 .xarxes_vertical{
-    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
     text-orientation: upright;
     writing-mode: vertical-rl;
     text-orientation: mixed;
     transform: rotate(180deg);
-    left: 0;
-    bottom: 30%;
+    
     ul{
+        padding: 0;
+        margin: 0;
         display: flex;
         list-style-type: none;
         li{
             padding: 0;
-            margin-top: 40px;
+            
+            &:not(:first-child){
+                background-image: url(../assets/linea_abajo.svg);
+                background-repeat: no-repeat;
+                background-position: center 20px;
+                padding-top: 100px;
+            }
             a{
                 color: #3E3E3E;
                 text-decoration: none;
@@ -183,18 +204,29 @@ section.doble_col{
     }
 }
 .contactes_vertical{
-    position: absolute;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
     text-orientation: upright;
     writing-mode: vertical-rl;
     text-orientation: mixed;
-    right: 0;
-    bottom: 30%;
     ul{
+        padding: 0;
+        margin: 0;
         display: flex;
         list-style-type: none;
         li{
             padding: 0;
-            margin-top: 40px;
+            
+            &:not(:first-child){
+                background-image: url(../assets/linea_abajo.svg);
+                background-repeat: no-repeat;
+                background-position: center 20px;
+                padding-top: 100px;
+            }
             a{
                 color: #3E3E3E;
                 text-decoration: none;
@@ -208,17 +240,47 @@ section.doble_col{
 .obertura{
     display: flex;
     flex-wrap: wrap;
-    div{
-        align-self: center;
-        flex-basis: 10%;
-        &:first-child{
-            margin-right: 90px;
-        }
-        &:last-child{
-            margin-left: 90px;
-        }
+    flex-direction: column;
+    .obertura_1col{
+            display: flex;
+            text-align: center;
+            align-self: center;
+            justify-content: center;
+            figure{
+                &.inactivo{
+                    display: none;
+                }
+                &.activo{
+                    display: flex;
+                }
+            }
+
+            div{  
+                align-self: center;
+                &:first-child{
+                    margin-right: 90px;
+                }
+                &:last-child{
+                    margin-left: 90px;
+                }
+                p{
+                    font-size: 18px;
+                    max-width: 237px;
+                }
+            }
     }
-    img{
-        flex-basis: 10%;
+    
+    .titol_obertura{
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 115%;
+        color: #3E3E3E;
+        max-width: 1008px;
+        align-self: center;
+    }
+    svg{
+        align-self: center;
     }
 }
