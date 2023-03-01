@@ -2,11 +2,11 @@
   <section class="obertura">
     <div class="obertura_1col">
     <PrismicRichText :field="slice.primary.parrafo_izquierda" />
-    <figure class="mySlides">
+    <figure class="activo mySlides">
       <PrismicImage :field="slice.primary.imagen_principal" />
     </figure>
     <template v-for="(item, i) in slice.items">    
-      <figure class="mySlides">
+      <figure class="inactivo mySlides">
         <PrismicImage :field="item.imagen" />
       </figure>
     </template>
