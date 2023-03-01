@@ -23,7 +23,12 @@
         </PrismicLink>
       </li>
     </ul></nav>
+    <Footer
+      :alternate-languages="alternateLanguages"
+      :navigation="navigation"
+      :settings="settings"
     
+    />
   </div>
 </template>
 

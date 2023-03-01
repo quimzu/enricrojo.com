@@ -286,3 +286,61 @@ section.doble_col{
         align-self: center;
     }
 }
+
+footer{
+    div{
+        margin: 40px 0 35px 50px;
+        display: flex;
+        justify-content: space-between;
+        .col_2{
+            float: left;
+            ul:not(.lang_switcher){
+                display: flex;
+                flex-wrap: wrap;
+                list-style-type: none;
+                flex-direction: column;
+                max-height: 50px;
+                li{
+                    flex-basis: 50%;
+                    &:not(:nth-child(1),:nth-child(2)){
+                        padding-left: 50px;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: #3E3E3E;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                &.xarxes{
+                    margin-right: 75px;
+                }
+            }
+            .lang_switcher{
+                    z-index: 1;
+                    list-style-type: none;
+                    li{
+                        a{
+                            text-decoration: none;
+                            color: #3E3E3E;
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                            span{
+                                padding-right: 50px;
+                                &.activo{
+                                    background-image: url(../assets/flecha_footer.svg);
+                                    background-repeat: no-repeat;
+                                    background-position-y: 5px;
+                                    background-position-x: 30px;
+                                }
+                            }
+                        }
+                    }
+                
+            }
+        }
+        
+    }
+}
