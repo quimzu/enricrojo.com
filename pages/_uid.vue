@@ -41,7 +41,7 @@ export default {
   },
   computed: {
     isProjectes() {
-     return this.$route.params.uid === 'projecte'
+     return this.$route.params.uid === 'projectes'
   }
   }
 }
