@@ -3,8 +3,15 @@
       <SliceZone :slices="page.data.slices" :components="components" />
 
       <section v-if="isProjectes">
-        <h1 v-if="page.lang == 'ca'">Projectes</h1>
-        <h1 v-if="page.lang == 'es-es'">Proyectos</h1>
+        <h1>Projectes</h1>
+       <article  v-for="post in posts">
+        <nuxt-link :to='$route.fullPath+"/"+post.slugs[0]'>
+          <PrismicImage :field="post.data.imatge_destacada" />
+        </nuxt-link>   
+        </article>
+      </section>
+      <section v-if="isProyectos">
+        <h1>Proyectos</h1>
        <article  v-for="post in posts">
         <nuxt-link :to='$route.fullPath+"/"+post.slugs[0]'>
           <PrismicImage :field="post.data.imatge_destacada" />
@@ -42,6 +49,9 @@ export default {
   computed: {
     isProjectes() {
      return this.$route.params.uid === 'projectes'
+  },
+  isProyectos() {
+     return this.$route.params.uid === 'proyectos'
   }
   }
 }
