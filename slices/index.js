@@ -3,12 +3,14 @@
 import ColumnaIndividual from './ColumnaIndividual';
 import DobleColumna from './DobleColumna';
 import OberturaHome from './OberturaHome';
+import ProyectoDestacado from './ProyectoDestacado';
 import Slider from './Slider';
 
 export {
 	ColumnaIndividual,
 	DobleColumna,
 	OberturaHome,
+	ProyectoDestacado,
 	Slider,
 };
 
@@ -16,5 +18,6 @@ export const components = {
 	columna_individual: ColumnaIndividual,
 	doble_columna: DobleColumna,
 	obertura_home: OberturaHome,
+	proyecto_destacado: ProyectoDestacado,
 	slider: Slider,
 };

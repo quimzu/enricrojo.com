@@ -1,6 +1,5 @@
 <template>
    <SliceZone :slices="page.data.slices" :components="components" />
-
 </template>
 
 <script>
@@ -11,6 +10,7 @@ export default {
     const lang = i18n.locale
     const page = await $prismic.api.getByUID('page', 'home', { lang })
     await store.dispatch('prismic/load', { lang, page })
+    
     return {
       page
     }

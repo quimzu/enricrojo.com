@@ -28,6 +28,9 @@
           "choices": {
             "obertura_home": {
               "type": "SharedSlice"
+            },
+            "proyecto_destacado": {
+              "type": "SharedSlice"
             }
           }
         }

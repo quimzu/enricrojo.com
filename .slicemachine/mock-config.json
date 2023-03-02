@@ -9,6 +9,11 @@
       "default": {
         "primary": {}
       }
+    },
+    "ProyectoDestacado": {
+      "default": {
+        "primary": {}
+      }
     }
   },
   "_cts": {

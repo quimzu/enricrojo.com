@@ -1,7 +1,7 @@
 {
   "uid": {
     "__TYPE__": "UIDContent",
-    "value": "hello"
+    "value": "pot"
   },
   "title": {
     "__TYPE__": "StructuredTextContent",
@@ -9,7 +9,7 @@
       {
         "type": "heading1",
         "content": {
-          "text": "Mainly"
+          "text": "Birth"
         }
       }
     ]
@@ -18,7 +18,7 @@
     "__TYPE__": "SliceContentType",
     "value": [
       {
-        "key": "obertura_home$ab9265e9-2d14-4674-89c4-3aa5112143df",
+        "key": "obertura_home$7753a345-ed14-4d57-ade8-72ee00c7d24c",
         "name": "obertura_home",
         "widget": {
           "__TYPE__": "SharedSliceContent",
@@ -30,20 +30,108 @@
                 {
                   "type": "paragraph",
                   "content": {
-                    "text": "Ad adipisicing dolore minim sit ullamco. Quis amet et pariatur aute culpa magna aliqua labore in ut minim. Aliqua excepteur nostrud excepteur culpa non laboris dolore exercitation in est."
+                    "text": "Dolor commodo ipsum mollit reprehenderit excepteur est dolor tempor veniam enim. Labore aliquip irure occaecat aliqua adipisicing excepteur tempor culpa aliquip tempor eu tempor nostrud."
                   }
                 }
               ]
             },
-            "imagen": {
+            "parrafo_derecha": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Aute voluptate ad nulla tempor veniam anim consequat cupidatat proident quis. Labore labore minim excepteur dolor ex officia ex id elit enim magna sint velit proident occaecat."
+                  }
+                }
+              ]
+            },
+            "titulo": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Eiusmod magna in id est ex proident incididunt proident nulla pariatur."
+                  }
+                }
+              ]
+            },
+            "imagen_principal": {
               "__TYPE__": "ImageContent",
               "origin": {
                 "id": "main",
-                "url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1",
+                "url": "https://images.unsplash.com/photo-1593642633279-1796119d5482",
+                "width": 4016,
+                "height": 6016
+              },
+              "url": "https://images.unsplash.com/photo-1593642633279-1796119d5482",
+              "width": 4016,
+              "height": 6016,
+              "edit": {
+                "zoom": 1,
+                "crop": {
+                  "x": 0,
+                  "y": 0
+                },
+                "background": "transparent"
+              },
+              "thumbnails": {}
+            }
+          },
+          "items": [
+            {
+              "__TYPE__": "GroupItemContent",
+              "value": [
+                [
+                  "imagen",
+                  {
+                    "__TYPE__": "ImageContent",
+                    "origin": {
+                      "id": "main",
+                      "url": "https://images.unsplash.com/photo-1600804931749-2da4ce26c869",
+                      "width": 3199,
+                      "height": 3199
+                    },
+                    "url": "https://images.unsplash.com/photo-1600804931749-2da4ce26c869",
+                    "width": 3199,
+                    "height": 3199,
+                    "edit": {
+                      "zoom": 1,
+                      "crop": {
+                        "x": 0,
+                        "y": 0
+                      },
+                      "background": "transparent"
+                    },
+                    "thumbnails": {}
+                  }
+                ]
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "key": "proyecto_destacado$9bb07ceb-c1b3-449b-ac79-d050bb0100fd",
+        "name": "proyecto_destacado",
+        "widget": {
+          "__TYPE__": "SharedSliceContent",
+          "variation": "default",
+          "primary": {
+            "orientacio_imatge": {
+              "__TYPE__": "BooleanContent",
+              "value": true
+            },
+            "imatge": {
+              "__TYPE__": "ImageContent",
+              "origin": {
+                "id": "main",
+                "url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2",
                 "width": 5616,
                 "height": 3744
               },
-              "url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1",
+              "url": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2",
               "width": 5616,
               "height": 3744,
               "edit": {
@@ -56,13 +144,24 @@
               },
               "thumbnails": {}
             },
-            "parrafo_derecha": {
+            "text": {
               "__TYPE__": "StructuredTextContent",
               "value": [
                 {
                   "type": "paragraph",
                   "content": {
-                    "text": "Magna ex nostrud ullamco cupidatat adipisicing. Ea minim laboris amet eiusmod Lorem. Lorem ea pariatur eiusmod aute amet dolor."
+                    "text": "Esse ea fugiat id mollit."
+                  }
+                }
+              ]
+            },
+            "sigles": {
+              "__TYPE__": "StructuredTextContent",
+              "value": [
+                {
+                  "type": "paragraph",
+                  "content": {
+                    "text": "Sunt ipsum ipsum reprehenderit et mollit magna ipsum irure cupidatat magna cupidatat esse dolor Lorem. Exercitation duis qui reprehenderit commodo consequat ullamco id ipsum id voluptate sint Lorem ea. Dolore sunt dolore consequat qui veniam sit non magna."
                   }
                 }
               ]
