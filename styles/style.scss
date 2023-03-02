@@ -74,11 +74,14 @@ header{
                         }
                         span{
                             padding-left: 20px;
-                            &.activo{
-                                background-image: url(../assets/flechita.svg);
-                                background-repeat: no-repeat;
-                                background-position-y: 5px;
-                            }
+                        }
+                    }
+                    span{
+                        padding-left: 20px;
+                        &.activo{
+                            background-image: url(../assets/flechita.svg);
+                            background-repeat: no-repeat;
+                            background-position-y: 5px;
                         }
                     }
                 }
@@ -329,16 +332,18 @@ footer{
                             }
                             span{
                                 padding-right: 50px;
+                            }
+                        }
+                        span{
+                            padding-right: 50px;
                                 &.activo{
                                     background-image: url(../assets/flecha_footer.svg);
                                     background-repeat: no-repeat;
                                     background-position-y: 5px;
                                     background-position-x: 30px;
                                 }
-                            }
                         }
                     }
-                
             }
         }
         

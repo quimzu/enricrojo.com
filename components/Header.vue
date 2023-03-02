@@ -19,34 +19,47 @@
          
         </ul>
       </nav>
+      <ul>
+          <template  v-if="alternateLanguages[0].lang == 'es-es'">
+            <li>
+              <template>
+                <span class="activo sr-only">CA</span>
+              </template>
+            </li>
+            <li
+            v-for="lang in alternateLanguages"
+            :key="lang.lang"
+          >
+            <PrismicLink :field="{ ...lang, link_type: 'Document' }">
+              <template>
+                <span class="sr-only">ES</span>
+              </template>
+            </PrismicLink>
 
-	  
-    <ul>
-      <template v-if="alternateLanguages[0].lang == 'es-es'">
-        <li>
-          <nuxt-link to="/">
-            <span class="activo sr-only">CA</span>
-          </nuxt-link>
-        </li>
-        <li>
-          <nuxt-link to="/es-es">
-            <span class="sr-only">ES</span>
-          </nuxt-link>
-        </li>
-      </template>
-      <template v-else>
-        <li>
-          <nuxt-link to="/">
-            <span class="sr-only">CA</span>
-          </nuxt-link>
-        </li>
-        <li>
-          <nuxt-link to="/es-es">
-            <span class="activo sr-only">ES</span>
-          </nuxt-link>
-        </li>
-      </template>
+            </li>
+          </template>
+          <template  v-else>
+            <li
+            v-for="lang in alternateLanguages"
+            :key="lang.lang"
+          >
+            <PrismicLink :field="{ ...lang, link_type: 'Document' }">
+              <template>
+                <span class="sr-only">CA</span>
+              </template>
+            </PrismicLink>
+
+            </li>
+            <li>
+              <template>
+                <span class="activo sr-only">ES</span>
+              </template>
+            </li>
+            
+          </template>
 	  </ul>
+	  
+    
     
   <!--   <h2>Redes Sociales</h2>
       <ul>
