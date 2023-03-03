@@ -11,14 +11,32 @@
       "version": "sktwi1xtmkfgx8626",
       "description": "ProyectoDestacado",
       "primary": {
-        "projecte": {
-          "type": "Link",
+        "orientacio_imatge": {
+          "type": "Select",
           "config": {
-            "label": "Projecte",
-            "select": "document",
-            "customtypes": [
-              "projectes"
+            "label": "Orientació Imatge",
+            "placeholder": "",
+            "options": [
+              "Esquerra",
+              "Dreta"
             ]
+          }
+        },
+        "imatge": {
+          "type": "Image",
+          "config": {
+            "label": "Imatge",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "text": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Text",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
           }
         },
         "sigles": {
@@ -30,15 +48,11 @@
             "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
           }
         },
-        "orientacio_imatge": {
-          "type": "Select",
+        "link_projecte": {
+          "type": "Link",
           "config": {
-            "label": "Orientació Imatge",
-            "placeholder": "",
-            "options": [
-              "Esquerra",
-              "Dreta"
-            ]
+            "label": "Link Projecte",
+            "select": "document"
           }
         }
       },

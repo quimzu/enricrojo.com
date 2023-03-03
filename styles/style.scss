@@ -350,7 +350,11 @@ footer{
     }
 }
 section.projecte_destacat{
+    position: relative;
     margin: 100px 0;
+    a{
+        z-index: 10;
+    }
     .columna_esquerra{
         .text{
             padding: 50px;
@@ -358,12 +362,26 @@ section.projecte_destacat{
             flex-direction: column;
             height: 100%;
             justify-content: space-between;
-            & div:first-child{
-                font-weight: 400;
-                font-size: 18px;
-                line-height: 25px;
-                letter-spacing: 0.03em;
+            a{
+                text-decoration: none;
+                div:first-child{
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 25px;
+                    letter-spacing: 0.03em;
+                    
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    z-index: 2;
+                }
             }
+            
             & div:last-child{
                 font-weight: 400;
                 font-size: 100px;
@@ -380,12 +398,26 @@ section.projecte_destacat{
             flex-direction: column;
             height: 100%;
             justify-content: space-between;
-            & div:first-child{
-                font-weight: 400;
-                font-size: 18px;
-                line-height: 25px;
-                letter-spacing: 0.03em;
+            a{
+                text-decoration: none;
+                div:first-child{
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 25px;
+                    letter-spacing: 0.03em;
+                    
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    z-index: 2;
+                }
             }
+
             & div:last-child{
                 font-weight: 400;
                 font-size: 100px;

@@ -18,7 +18,7 @@ export const _Default = () => ({
   },
   data() {
     return {
-      mock: {"variation":"default","version":"sktwi1xtmkfgx8626","items":[{}],"primary":{"projecte":{"id":"mock_document_id","link_type":"Document","type":"projectes","tags":[],"lang":"en-us","slug":null,"first_publication_date":"1970-01-01T00:00:01+0000","last_publication_date":"1970-01-01T01:00:00+0000"},"sigles":[{"type":"paragraph","text":"Non minim et mollit labore sit laboris sit cupidatat mollit ex.","spans":[]}],"orientacio_imatge":"Dreta"},"id":"_Default","slice_type":"proyecto_destacado"}
+      mock: {"variation":"default","version":"sktwi1xtmkfgx8626","items":[{}],"primary":{"orientacio_imatge":"Dreta","imatge":{"dimensions":{"width":12288,"height":16384},"alt":null,"copyright":null,"url":"https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab"},"text":[{"type":"paragraph","text":"Labore aliquip aliqua velit irure ex incididunt duis anim.","spans":[]}],"sigles":[{"type":"paragraph","text":"Non minim et mollit labore sit laboris sit cupidatat mollit ex.","spans":[]}],"link_projecte":{"id":"mock_document_id","link_type":"Document","type":"mock","tags":[],"lang":"en-us","slug":null,"first_publication_date":"1970-01-01T00:00:01+0000","last_publication_date":"1970-01-01T01:00:00+0000"}},"id":"_Default","slice_type":"proyecto_destacado"}
     }
   },
   template: '<SliceZone :slices="[mock]" :resolver="resolve" />'
