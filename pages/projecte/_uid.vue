@@ -44,7 +44,7 @@ export default {
     async asyncData ({ $prismic, params, store, i18n }) {
         const lang = i18n.locale
         const post = await $prismic.api.getByUID("projectes", params.uid, { lang });
-        await store.dispatch('prismic/load', { lang, post })
+        await store.dispatch('prismic/load', { lang, page: post })
         return {
             post,
         };
