@@ -1,6 +1,5 @@
 <template>
   <section class="projecte_destacat" v-if="slice.primary.orientacio_imatge == 'Esquerra'">
-    <PrismicLink :field="slice.primary.link_projecte">My Link</PrismicLink>
     <div class="columna_esquerra">
       <PrismicImage :field="slice.primary.imatge" />
     </div>
@@ -12,7 +11,18 @@
           <path d="M10.4286 1L1 10.4286" stroke="#3E3E3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           <path d="M10.4286 19.8573L1 10.4287" stroke="#3E3E3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
-          <PrismicLink :field="slice.primary.link_projecte"><PrismicRichText :field="slice.primary.text" /></PrismicLink>
+          
+          <template v-if="slice.primary.link_projecte.lang == 'ca'">
+            <NuxtLink :to='"/projecte/"+slice.primary.link_projecte.uid'>
+              <PrismicRichText :field="slice.primary.text" />
+            </NuxtLink>
+          </template>
+          <template v-else>
+            <NuxtLink :to='slice.primary.link_projecte.lang+"/projecte/"+slice.primary.link_projecte.uid'>
+              <PrismicRichText :field="slice.primary.text" />
+            </NuxtLink>
+          </template>
+            
         </div>
        
         <PrismicRichText :field="slice.primary.sigles" />
@@ -28,7 +38,16 @@
           <path d="M18.5714 19.8574L28 10.4289" stroke="#3E3E3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           <path d="M18.5714 1.00014L28 10.4287" stroke="#3E3E3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
-          <PrismicLink :field="slice.primary.link_projecte"><PrismicRichText :field="slice.primary.text" /></PrismicLink>
+          <template v-if="slice.primary.link_projecte.lang == 'ca'">
+            <NuxtLink :to='"/projecte/"+slice.primary.link_projecte.uid'>
+              <PrismicRichText :field="slice.primary.text" />
+            </NuxtLink>
+          </template>
+          <template v-else>
+            <NuxtLink :to='slice.primary.link_projecte.lang+"/projecte/"+slice.primary.link_projecte.uid'>
+              <PrismicRichText :field="slice.primary.text" />
+            </NuxtLink>
+          </template>
         </div>
         
         <PrismicRichText :field="slice.primary.sigles" />
@@ -47,13 +66,5 @@ export default {
   name: "ProyectoDestacado",
   // The array passed to `getSliceComponentProps` is purely optional and acts as a visual hint for you
   props: getSliceComponentProps(["slice", "index", "slices", "context"]),
-  async asyncData ({ $prismic, params, store }) {
-        const lang = slice.primary.projecte.lang
-        const post = await $prismic.api.getByUID("projectes", slice.primary.projecte.uid, { lang });
-        await store.dispatch('prismic/load', { lang, post })
-        return {
-            post
-        };
-      }
 }
 </script>

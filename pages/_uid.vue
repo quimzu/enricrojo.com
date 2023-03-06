@@ -2,21 +2,25 @@
     <div>
       <SliceZone :slices="page.data.slices" :components="components" />
 
-      <section v-if="isProjectes">
+      <section class="llista_projectes" v-if="isProjectes">
         <h1>Projectes</h1>
-       <article  v-for="post in posts">
-        <nuxt-link :to='$route.fullPath+"/"+post.slugs[0]'>
+        <div class="projectes">
+       <article class="projecte" v-for="post in posts">
+        <nuxt-link class="img_projecte" :to='$route.fullPath+"/"+post.slugs[0]'>
           <PrismicImage :field="post.data.imatge_destacada" />
         </nuxt-link>   
         </article>
+      </div>
       </section>
-      <section v-if="isProyectos">
+      <section class="llista_projectes" v-if="isProyectos">
         <h1>Proyectos</h1>
-       <article  v-for="post in posts">
-        <nuxt-link :to='$route.fullPath+"/"+post.slugs[0]'>
+        <div class="projectes">
+       <article class="projecte" v-for="post in posts">
+        <nuxt-link class="img_projecte" :to='$route.fullPath+"/"+post.slugs[0]'>
           <PrismicImage :field="post.data.imatge_destacada" />
         </nuxt-link>   
         </article>
+      </div>
       </section>
     </div>
 </template>

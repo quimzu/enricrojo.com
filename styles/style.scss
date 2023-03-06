@@ -91,21 +91,29 @@ header{
 }
 
 section{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    .projecte{
-        flex-basis: 20%;
-        text-align: center;
-        .img_projecte{
-            margin: 0;
-            img{
-                width: 250px;
-                height: 250px;
+    &:not(.llista_projectes){
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .projectes{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .projecte{
+            flex-basis: 20%;
+            text-align: center;
+            .img_projecte{
+                margin: 0;
+                img{
+                    width: 250px;
+                    height: 250px;
+                }
+                
             }
-            
         }
     }
+    
 }
 
 
