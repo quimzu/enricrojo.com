@@ -46,7 +46,7 @@ export default {
         const post = await $prismic.api.getByUID("projectes", params.uid, { lang });
         await store.dispatch('prismic/load', { lang, post })
         return {
-            post
+            post,
         };
     },
     data () {
