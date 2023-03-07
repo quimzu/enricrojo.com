@@ -1,19 +1,19 @@
 {
   "uid": {
     "__TYPE__": "UIDContent",
-    "value": "clothing"
+    "value": "represent"
   },
   "imatge_destacada": {
     "__TYPE__": "ImageContent",
     "origin": {
       "id": "main",
-      "url": "https://images.unsplash.com/photo-1591012911207-0dbac31f37da",
-      "width": 4000,
-      "height": 4000
+      "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2",
+      "width": 3648,
+      "height": 4560
     },
-    "url": "https://images.unsplash.com/photo-1591012911207-0dbac31f37da",
-    "width": 4000,
-    "height": 4000,
+    "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2",
+    "width": 3648,
+    "height": 4560,
     "edit": {
       "zoom": 1,
       "crop": {
@@ -30,14 +30,14 @@
       {
         "type": "paragraph",
         "content": {
-          "text": "Enim enim sit dolor ad ex proident consequat id incididunt eu veniam veniam. Veniam ea eiusmod amet est duis proident officia irure ea laborum eu id enim anim dolore."
+          "text": "Exercitation voluptate aliquip Lorem mollit commodo anim Lorem anim. Reprehenderit id ea aute ullamco amet id non. Esse commodo commodo enim reprehenderit commodo ut quis in."
         }
       }
     ]
   },
   "codi_projecte": {
     "__TYPE__": "FieldContent",
-    "value": "follow",
+    "value": "seeing",
     "type": "Text"
   },
   "descripcio_projecte": {
@@ -46,7 +46,7 @@
       {
         "type": "paragraph",
         "content": {
-          "text": "Irure laboris sunt est. Id sit est do ipsum magna incididunt pariatur in dolore reprehenderit minim commodo."
+          "text": "Lorem esse veniam esse sunt dolor dolore. Incididunt nisi dolor adipisicing sit. Commodo ullamco tempor ex."
         }
       }
     ]
@@ -57,16 +57,37 @@
       {
         "type": "paragraph",
         "content": {
-          "text": "Exercitation esse aliqua nisi do cillum consectetur do fugiat velit ea."
+          "text": "Amet mollit ipsum et minim est nulla est incididunt quis velit id velit. Voluptate ea exercitation quis esse quis esse ullamco est id aliqua elit aliquip. Veniam aliqua ad aute nisi veniam velit exercitation aute elit exercitation labore ex ex."
         }
       }
     ]
+  },
+  "imatge_detall": {
+    "__TYPE__": "ImageContent",
+    "origin": {
+      "id": "main",
+      "url": "https://images.unsplash.com/photo-1589321599763-d66926c29613",
+      "width": 3168,
+      "height": 4752
+    },
+    "url": "https://images.unsplash.com/photo-1589321599763-d66926c29613",
+    "width": 3168,
+    "height": 4752,
+    "edit": {
+      "zoom": 1,
+      "crop": {
+        "x": 0,
+        "y": 0
+      },
+      "background": "transparent"
+    },
+    "thumbnails": {}
   },
   "slices": {
     "__TYPE__": "SliceContentType",
     "value": [
       {
-        "key": "slider$07af92b0-fd50-4226-8761-4add264ddcdc",
+        "key": "slider$21e4ed20-b7b3-49e6-9ef2-6f76d1ae1499",
         "name": "slider",
         "widget": {
           "__TYPE__": "SharedSliceContent",
@@ -82,13 +103,13 @@
                     "__TYPE__": "ImageContent",
                     "origin": {
                       "id": "main",
-                      "url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6",
-                      "width": 3212,
-                      "height": 3880
+                      "url": "https://images.unsplash.com/photo-1596195689404-24d8a8d1c6ea",
+                      "width": 5000,
+                      "height": 4613
                     },
-                    "url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6",
-                    "width": 3212,
-                    "height": 3880,
+                    "url": "https://images.unsplash.com/photo-1596195689404-24d8a8d1c6ea",
+                    "width": 5000,
+                    "height": 4613,
                     "edit": {
                       "zoom": 1,
                       "crop": {
@@ -106,7 +127,7 @@
         }
       },
       {
-        "key": "doble_columna$72a07f21-70f0-4a69-89fd-a3723fb5bef6",
+        "key": "doble_columna$3b9bf72a-3505-4b01-a356-0955556a03c0",
         "name": "doble_columna",
         "widget": {
           "__TYPE__": "SharedSliceContent",
@@ -114,7 +135,7 @@
           "primary": {
             "orientacio_imatge": {
               "__TYPE__": "FieldContent",
-              "value": "Esquerra",
+              "value": "Dreta",
               "type": "Select"
             },
             "imatge": {
@@ -144,7 +165,7 @@
                 {
                   "type": "paragraph",
                   "content": {
-                    "text": "Culpa reprehenderit nulla adipisicing commodo qui est sint aute aute aute quis. Ad eiusmod minim commodo irure culpa voluptate cupidatat."
+                    "text": "Aliquip aute exercitation veniam cillum non laborum non Lorem. Non eu qui ex fugiat deserunt ad excepteur ullamco Lorem est pariatur pariatur deserunt. Adipisicing incididunt ex deserunt ullamco dolore et non ipsum labore magna pariatur laboris."
                   }
                 }
               ]
@@ -159,7 +180,7 @@
         }
       },
       {
-        "key": "columna_individual$947d127e-539c-413b-a4cb-f8a2c60fb014",
+        "key": "columna_individual$a6f6b4b7-f0f0-4fbe-96be-5cf37e940188",
         "name": "columna_individual",
         "widget": {
           "__TYPE__": "SharedSliceContent",
@@ -171,7 +192,7 @@
                 {
                   "type": "paragraph",
                   "content": {
-                    "text": "Occaecat occaecat proident id. Culpa Lorem do aute minim duis ea magna."
+                    "text": "Tempor aliquip nostrud magna est adipisicing magna elit. Deserunt nisi ea aute est voluptate laborum tempor. Duis velit tempor pariatur excepteur ipsum reprehenderit ullamco sint consequat magna."
                   }
                 }
               ]

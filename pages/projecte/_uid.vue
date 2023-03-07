@@ -1,11 +1,21 @@
 <template>
     <main>
-        <PrismicRichText :field="post.data.titol_projecte" />
+        
+      <section class="capcalera_detall">
+        <PrismicImage class="img_detall" :field="post.data.imatge_detall" />
+        <div class="col_info">
+        <div><span>{{ post.data.codi_projecte }}</span></div>
+        <svg width="21" height="29" viewBox="0 0 21 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10.4286 1L10.4286 27.4" stroke="#3E3E3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M19.8572 10.4286L10.4286 1" stroke="#3E3E3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M1.00002 10.4286L10.4286 1" stroke="#3E3E3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
 
-        <PrismicImage :field="post.data.imatge_destacada" />
-
-        <span>{{ post.data.codi_projecte }}</span>
+        <PrismicRichText class="titol_projecte" :field="post.data.titol_projecte" />
         <PrismicRichText :field="post.data.descripcio_projecte" />
+      </div>
+      </section>
+       
 
 
         <SliceZone :slices="post.data.slices" :components="components" />

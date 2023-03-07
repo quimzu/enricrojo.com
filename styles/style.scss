@@ -9,6 +9,7 @@
     margin: 0;
  }
 main{
+    padding: 0 100px;
     .obertura_1col{
         display: flex;
         section{
@@ -270,12 +271,6 @@ section.doble_col{
 
             div{  
                 align-self: center;
-                &:first-child{
-                    margin-right: 90px;
-                }
-                &:last-child{
-                    margin-left: 90px;
-                }
                 p{
                     font-size: 18px;
                     max-width: 237px;
@@ -438,3 +433,29 @@ section.projecte_destacat{
 }
 
 
+.capcalera_detall{
+    .img_detall{
+        flex-basis: 70%;
+        max-height: 560px;
+        max-width: 730px;
+    }
+    .col_info{
+        padding: 0 30px;
+        flex-basis: 20%;
+        div{
+            color: #3E3E3E;
+            &:first-child{
+                font-size: 200px;
+                letter-spacing: 0.03em;
+            }
+            &.titol_projecte{
+                font-size: 18px;
+                letter-spacing: 0.03em;
+                padding-bottom: 10px;
+                background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iMSIgdmlld0JveD0iMCAwIDYwIDEiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxsaW5lIHkxPSIwLjUiIHgyPSI2MCIgeTI9IjAuNSIgc3Ryb2tlPSIjM0UzRTNFIi8+Cjwvc3ZnPgo=);
+                background-repeat: no-repeat;
+                background-position: left 44px;
+            }
+        }
+    }
+}
