@@ -7,7 +7,9 @@
         <div class="projectes">
        <article class="projecte" v-for="post in posts">
         <nuxt-link class="img_projecte" :to='"/projecte/"+post.uid'>
-          <PrismicImage :field="post.data.imatge_destacada" />
+          <PrismicImage :field="post.data.imatge_destacada_1" />
+          <PrismicImage :field="post.data.imatge_destacada_2" />
+          <PrismicImage :field="post.data.imatge_destacada_3" />
         </nuxt-link>   
         </article>
       </div>
@@ -17,7 +19,9 @@
         <div class="projectes">
        <article class="projecte" v-for="post in posts">
         <nuxt-link class="img_projecte" :to='"/es-es/projecte/"+post.uid'>
-          <PrismicImage :field="post.data.imatge_destacada" />
+          <PrismicImage :field="post.data.imatge_destacada_1" />
+          <PrismicImage :field="post.data.imatge_destacada_2" />
+          <PrismicImage :field="post.data.imatge_destacada_3" />
         </nuxt-link>   
         </article>
       </div>

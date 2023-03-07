@@ -12,10 +12,26 @@
           "placeholder": ""
         }
       },
-      "imatge_destacada": {
+      "imatge_destacada_1": {
         "type": "Image",
         "config": {
-          "label": "Imatge Destacada",
+          "label": "Imatge Destacada 1",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "imatge_destacada_2": {
+        "type": "Image",
+        "config": {
+          "label": "Imatge Destacada 2",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "imatge_destacada_3": {
+        "type": "Image",
+        "config": {
+          "label": "Imatge Destacada 3",
           "constraint": {},
           "thumbnails": []
         }

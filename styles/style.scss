@@ -102,13 +102,14 @@ section{
         flex-wrap: wrap;
         justify-content: center;
         .projecte{
-            flex-basis: 20%;
+            flex-basis: 100%;
             text-align: center;
             .img_projecte{
                 margin: 0;
                 img{
-                    width: 250px;
-                    height: 250px;
+                    max-width: 332px;
+                    max-height: 465px;
+                    padding: 10px;
                 }
                 
             }
