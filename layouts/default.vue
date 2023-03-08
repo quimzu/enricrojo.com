@@ -13,7 +13,7 @@
       :navigation="navigation"
       :settings="settings"
     />
-    <main><nuxt /></main>
+    <nuxt />
     <Dreta
     :alternate-languages="alternateLanguages"
       :navigation="navigation"

@@ -94,8 +94,11 @@ header{
 section{
     &:not(.llista_projectes){
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
+    }
+    &.llista_projectes{
+        max-width: 1190px;
+        margin: 0 auto;
     }
     .projectes{
         display: flex;
@@ -111,22 +114,28 @@ section{
             
             .projecte_info{
                 margin: 0;
+                flex-wrap: nowrap;
                 .imgs_proj{
+                    flex-basis: 85%;
+                    display: flex;
+                    gap: 10px;
+                    align-items: flex-start;
                     img{
-                        max-width: 332px;
-                        max-height: 465px;
-                        padding: 10px;
+                        width: 33.3%;
+                        height: auto;
                     }
                 }
                 
                 .text_proj{
+                    flex-basis: 15%;
                     display: flex;
                     flex-direction: column;
-                    justify-content: space-around;
+                    justify-content: space-between;
                     max-width: 150px;
                     .text_arriba{
                         text-align: -webkit-left;
                         padding-left: 30px;
+                        padding-top: 50px;
                         a{
                             color:#3E3E3E;
                             text-decoration: none;
@@ -488,10 +497,13 @@ section.projecte_destacat{
 
 
 .capcalera_detall{
+    max-width: 1190px;
+    margin: 0 auto;
     .img_detall{
+        display: flex;
         flex-basis: 70%;
-        max-height: 560px;
-        max-width: 730px;
+        width: 100%;
+        align-self: flex-start;
     }
     .col_info{
         padding: 0 30px;
