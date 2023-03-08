@@ -104,12 +104,65 @@ section{
         .projecte{
             flex-basis: 100%;
             text-align: center;
-            .img_projecte{
+            position: relative;
+            &:not(:last-child){
+                margin-bottom: 150px;
+            }
+            
+            .projecte_info{
                 margin: 0;
-                img{
-                    max-width: 332px;
-                    max-height: 465px;
-                    padding: 10px;
+                .imgs_proj{
+                    img{
+                        max-width: 332px;
+                        max-height: 465px;
+                        padding: 10px;
+                    }
+                }
+                
+                .text_proj{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    max-width: 150px;
+                    .text_arriba{
+                        text-align: -webkit-left;
+                        padding-left: 30px;
+                        a{
+                            color:#3E3E3E;
+                            text-decoration: none;
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                right: 0;
+                                bottom: 0;
+                                z-index: 2;
+                            }
+                            h2{
+                                font-weight: 400;
+                                font-size: 18px;
+                                line-height: 25px;
+                                letter-spacing: 0.03em;
+                            }
+                        }
+                    }
+                    
+                    span{
+                        font-weight: 400;
+                        font-size: 100px;
+                        line-height: 137px;
+                        /* identical to box height */
+
+                        letter-spacing: 0.03em;
+
+                        color: #3E3E3E;
+                        writing-mode: vertical-rl;
+                        text-orientation: mixed;
+                        transform: rotate(180deg);
+                        
+                    }
+                    
                 }
                 
             }
