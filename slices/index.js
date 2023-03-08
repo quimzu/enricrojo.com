@@ -5,6 +5,7 @@ import DobleColumna from './DobleColumna';
 import OberturaHome from './OberturaHome';
 import ProyectoDestacado from './ProyectoDestacado';
 import Slider from './Slider';
+import TripleColumna from './TripleColumna';
 
 export {
 	ColumnaIndividual,
@@ -12,6 +13,7 @@ export {
 	OberturaHome,
 	ProyectoDestacado,
 	Slider,
+	TripleColumna,
 };
 
 export const components = {
@@ -20,4 +22,5 @@ export const components = {
 	obertura_home: OberturaHome,
 	proyecto_destacado: ProyectoDestacado,
 	slider: Slider,
+	triple_columna: TripleColumna,
 };

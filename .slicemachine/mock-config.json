@@ -14,6 +14,11 @@
       "default": {
         "primary": {}
       }
+    },
+    "TripleColumna": {
+      "default": {
+        "primary": {}
+      }
     }
   },
   "_cts": {

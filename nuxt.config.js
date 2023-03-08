@@ -27,7 +27,15 @@ export default async () => {
         },
         { name: 'format-detection', content: 'telephone=no' }
       ],
-      link: [{ rel: 'icon', type: 'image/png', href: '/favicon.png' }]
+      link: [{ rel: 'icon', type: 'image/png', href: '/favicon.png' }],
+      script: [
+        {
+            type: 'text/javascript',
+            src: '/slider.js',
+            body: true
+        }
+    ]
+
     },
 
     // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules

@@ -1,0 +1,43 @@
+{
+  "id": "triple_columna",
+  "type": "SharedSlice",
+  "name": "TripleColumna",
+  "description": "TripleColumna",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "TripleColumna",
+      "primary": {
+        "imatge_1": {
+          "type": "Image",
+          "config": {
+            "label": "Imatge 1",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "imatge_2": {
+          "type": "Image",
+          "config": {
+            "label": "Imatge 2",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "imatge_3": {
+          "type": "Image",
+          "config": {
+            "label": "Imatge 3",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

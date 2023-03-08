@@ -20,15 +20,7 @@ export default {
   name: "Slider",
   // The array passed to `getSliceComponentProps` is purely optional and acts as a visual hint for you
   props: getSliceComponentProps(["slice", "index", "slices", "context"]),
-  head: {
-    script: [
-        {
-            type: 'text/javascript',
-            src: '/slider.js',
-            body: true
-        },
-    ]
-  }
+  
 
 }
 </script>

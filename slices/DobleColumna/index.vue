@@ -8,6 +8,14 @@
         <PrismicImage :field="slice.primary.imatge" />
       </figure>
     </template>
+    <template v-else>
+      <figure>
+        <PrismicImage :field="slice.primary.imatge" />
+      </figure>
+      <div class="texto_2col">
+        <PrismicRichText :field="slice.primary.text" />
+      </div>
+    </template>
   </section>
 </template>
 

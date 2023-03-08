@@ -229,18 +229,11 @@ section.doble_col{
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    max-width: 900px;
+    max-width: 1190px;
     margin: 2em auto;
     div.texto_2col{
-        max-width: 190px;
+        align-self: flex-end;
     }
-    figure{
-        
-        img{
-            max-width: 560px;
-        }
-    }
-   
 }
 
 .xarxes_vertical{
@@ -523,5 +516,15 @@ section.projecte_destacat{
                 background-position: left 44px;
             }
         }
+    }
+}
+
+.triple_col{
+    gap: 20px;
+    max-width: 1190px;
+    margin: 0 auto;
+    img{
+        flex-basis: 33.33%;
+        width: 100%;
     }
 }

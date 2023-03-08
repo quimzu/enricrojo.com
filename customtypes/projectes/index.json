@@ -91,6 +91,9 @@
             },
             "columna_individual": {
               "type": "SharedSlice"
+            },
+            "triple_columna": {
+              "type": "SharedSlice"
             }
           }
         }
