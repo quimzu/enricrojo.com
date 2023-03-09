@@ -537,6 +537,20 @@ section.projecte_destacat{
         display: flex;
         article{
             flex-basis: 33%;
+            position: relative;
+            a{
+                text-decoration: none;
+                color: #3E3E3E;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    z-index: 2;
+                }
+            }
         }
     }
 }
