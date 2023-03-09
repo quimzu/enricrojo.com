@@ -92,7 +92,7 @@ header{
 }
 
 section{
-    &:not(.llista_projectes){
+    &:not(.llista_projectes, .projectes_relacionats){
         display: flex;
         justify-content: center;
     }
@@ -526,5 +526,17 @@ section.projecte_destacat{
     img{
         flex-basis: 33.33%;
         width: 100%;
+    }
+}
+
+.projectes_relacionats{
+    max-width: 1190px;
+    margin: 0 auto;
+    div{
+        gap: 20px;
+        display: flex;
+        article{
+            flex-basis: 33%;
+        }
     }
 }

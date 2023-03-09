@@ -78,6 +78,36 @@
           "thumbnails": []
         }
       },
+      "projecte_relacionat_1": {
+        "type": "Link",
+        "config": {
+          "label": "Projecte Relacionat 1",
+          "select": "document",
+          "customtypes": [
+            "projectes"
+          ]
+        }
+      },
+      "projecte_relacionat_2": {
+        "type": "Link",
+        "config": {
+          "label": "Projecte Relacionat 2",
+          "select": "document",
+          "customtypes": [
+            "projectes"
+          ]
+        }
+      },
+      "projecte_relacionat_3": {
+        "type": "Link",
+        "config": {
+          "label": "Projecte Relacionat 3",
+          "select": "document",
+          "customtypes": [
+            "projectes"
+          ]
+        }
+      },
       "slices": {
         "type": "Slices",
         "fieldset": "Slice Zone",
