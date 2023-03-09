@@ -18,7 +18,7 @@
        
 
 
-        <SliceZone :slices="post.data.slices" :components="components" />
+        <SliceZone :slices="post.data.slices" :components="components"/>
 
         <ul>
 		<h2>idioma</h2>
@@ -60,12 +60,29 @@ export default {
         };
     },
     data () {
-     return { components }
+     return { 
+      components,
+
+
+     }
     },
     head () {
     return {
-      title: `${this.$prismic.asText(this.post.data.title)} | ${this.$prismic.asText(this.$store.state.prismic.settings.data.siteTitle)}`
+      title: `${this.$prismic.asText(this.post.data.title)} | ${this.$prismic.asText(this.$store.state.prismic.settings.data.siteTitle)}`,
+     script: [
+        {
+          hid: 'stripe', 
+          src: '../slider.js', 
+          defer: true,
+          body: true,
+
+        }
+      ]
     }
-  }
+  }, 
+  mounted: () => {
+    console.log('mounted')
+  },
+
 }
 </script>

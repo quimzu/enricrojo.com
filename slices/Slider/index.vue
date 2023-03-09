@@ -2,7 +2,12 @@
   <section class="slider">
         <div class='slideshow-container'>
           <template v-for="(item, i) in slice.items">
-            <div class="mySlides fade">
+            <div v-if="i == 0 " class="mySlides fade" style="display:block">
+              <PrismicImage :field="item.imatge" />
+            </div>
+
+
+            <div v-else class="mySlides fade" style="display:none">
               <PrismicImage :field="item.imatge" />
             </div>
           </template>

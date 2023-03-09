@@ -29,11 +29,7 @@ export default async () => {
       ],
       link: [{ rel: 'icon', type: 'image/png', href: '/favicon.png' }],
       script: [
-        {
-            type: 'text/javascript',
-            src: '/slider.js',
-            body: true
-        }
+
     ]
 
     },
