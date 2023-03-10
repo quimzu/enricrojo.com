@@ -40,8 +40,15 @@ export default async () => {
     // Modules: https://go.nuxtjs.dev/config-modules
     modules: [
       '@nuxtjs/i18n',
+      '@nuxtjs/gtm',
       /* Load Prismic module after i18n module to prevent extend route concurrency */ '@nuxtjs/prismic'
     ],
+    plugins: [
+      '~/plugins/gtm',
+    ],
+    gtm: {
+      id: 'GTM-PCX2TNR'
+    },
 
     build: {
       // See: https://github.com/nuxt/postcss8/issues/24

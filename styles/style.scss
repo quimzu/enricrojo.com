@@ -181,13 +181,18 @@ section{
 
 
 //Slider
-.slideshow-container {
-    max-width: 1000px;
+section.slider{
+    max-width: 1190px;
+    margin: 0 auto;
     position: relative;
-    margin: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+    .slideshow-container {
+        max-width: 1000px;
+        margin: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+}
+
   
   /* Hide the images by default */
   .mySlides {
@@ -195,6 +200,7 @@ section{
   }
 
 /* Next & previous buttons */
+
 .slideshow-container .prev, .slideshow-container .next {
     position: absolute;
     cursor: pointer;
@@ -218,8 +224,11 @@ section{
   }
   
   /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+  .prev{
+    left: 0;
+  }
+  .next{
+    right: 0;
   }
 
 //Doble Columna
@@ -563,6 +572,10 @@ section.projecte_destacat{
                 display: flex;
                 flex-direction: column;
                 align-self: flex-end;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 25px;
+                letter-spacing: 0.03em;
                 &::before{
                     content: "";
                     position: absolute;
@@ -604,4 +617,9 @@ section.projecte_destacat{
             }
         }
     }
+}
+
+.indiv_col{
+    max-width: 1190px;
+    margin: 0 auto;
 }

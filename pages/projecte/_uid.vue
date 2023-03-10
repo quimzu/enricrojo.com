@@ -112,7 +112,7 @@ export default {
     },
     head () {
     return {
-      title: `${this.$prismic.asText(this.post.data.title)} | ${this.$prismic.asText(this.$store.state.prismic.settings.data.siteTitle)}`,
+      title: `${this.$prismic.asText(this.post.data.titol_projecte)} | ${this.$prismic.asText(this.$store.state.prismic.settings.data.siteTitle)}`,
      script: [
         {
           hid: 'stripe', 
