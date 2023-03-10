@@ -78,6 +78,14 @@
           "thumbnails": []
         }
       },
+      "imatge_quadrada": {
+        "type": "Image",
+        "config": {
+          "label": "Imatge Quadrada",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
       "projecte_relacionat_1": {
         "type": "Link",
         "config": {
@@ -92,16 +100,6 @@
         "type": "Link",
         "config": {
           "label": "Projecte Relacionat 2",
-          "select": "document",
-          "customtypes": [
-            "projectes"
-          ]
-        }
-      },
-      "projecte_relacionat_3": {
-        "type": "Link",
-        "config": {
-          "label": "Projecte Relacionat 3",
           "select": "document",
           "customtypes": [
             "projectes"

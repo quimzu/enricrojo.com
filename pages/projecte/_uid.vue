@@ -34,39 +34,49 @@
 
 
     <template v-if="post.lang == 'ca'">
-      <section class="projectes_relacionats" v-if="ProjecteRelacionat1 != null || ProjecteRelacionat2 != null || ProjecteRelacionat3 != null">
-        <h3>PROJECTES RELACIONATS</h3>
+      <section class="projectes_relacionats" v-if="ProjecteRelacionat1 != null || ProjecteRelacionat2 != null">
+        <div class="header_proy_relacionats">
+          <h3>Otros proyectos</h3>
+          <svg width="21" height="29" viewBox="0 0 21 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.5714 27.4L10.5714 1.00002" stroke="#3E3E3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M1.14282 17.9715L10.5714 27.4" stroke="#3E3E3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M20 17.9715L10.5714 27.4" stroke="#3E3E3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
         <div>
           <article v-if="ProjecteRelacionat1 != null">
-            <img :src="ProjecteRelacionat1.data.imatge_destacada_1.url">
-            <nuxt-link :to='"/projecte/"+post.data.projecte_relacionat_1.uid' ><h4>{{ ProjecteRelacionat1.data.titol_projecte[0].text }}</h4></nuxt-link>
+            <img :src="ProjecteRelacionat1.data.imatge_quadrada.url">
+            <nuxt-link :to='"/projecte/"+post.data.projecte_relacionat_1.uid' ><h4>{{ ProjecteRelacionat1.data.titol_projecte[0].text }}</h4>
+            <span>{{ ProjecteRelacionat1.data.codi_projecte }}</span></nuxt-link>
           </article>
           <article v-if="ProjecteRelacionat2 != null">
-            <img :src="ProjecteRelacionat2.data.imatge_destacada_1.url">
-            <nuxt-link :to='"/projecte/"+post.data.projecte_relacionat_2.uid' ><h4>{{ ProjecteRelacionat2.data.titol_projecte[0].text }}</h4></nuxt-link>
-          </article>
-          <article v-if="ProjecteRelacionat3 != null">
-            <img :src="ProjecteRelacionat3.data.imatge_destacada_1.url">
-            <nuxt-link :to='"/projecte/"+post.data.projecte_relacionat_3.uid' ><h4>{{ ProjecteRelacionat3.data.titol_projecte[0].text }}</h4></nuxt-link>
+            <img :src="ProjecteRelacionat2.data.imatge_quadrada.url">
+            <nuxt-link :to='"/projecte/"+post.data.projecte_relacionat_2.uid' ><h4>{{ ProjecteRelacionat2.data.titol_projecte[0].text }}</h4>
+            <span>{{ ProjecteRelacionat2.data.codi_projecte }}</span></nuxt-link>
           </article>
         </div>
       </section>
     </template>
     <template v-else>
-      <section class="projectes_relacionats" v-if="ProjecteRelacionat1 != null || ProjecteRelacionat2 != null || ProjecteRelacionat3 != null">
-        <h3>PROYECTOS RELACIONADOS</h3>
+      <section class="projectes_relacionats" v-if="ProjecteRelacionat1 != null || ProjecteRelacionat2 != null">
+        <div class="header_proy_relacionats">
+          <h3>Altres projectes</h3>
+          <svg width="21" height="29" viewBox="0 0 21 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.5714 27.4L10.5714 1.00002" stroke="#3E3E3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M1.14282 17.9715L10.5714 27.4" stroke="#3E3E3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M20 17.9715L10.5714 27.4" stroke="#3E3E3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
         <div>
           <article v-if="ProjecteRelacionat1 != null">
-            <img :src="ProjecteRelacionat1.data.imatge_destacada_1.url">
-            <nuxt-link :to='"/es-es/projecte/"+post.data.projecte_relacionat_1.uid' ><h4>{{ ProjecteRelacionat1.data.titol_projecte[0].text }}</h4></nuxt-link>
+            <img :src="ProjecteRelacionat1.data.imatge_quadrada.url">
+            <nuxt-link :to='"/es-es/projecte/"+post.data.projecte_relacionat_1.uid' ><h4>{{ ProjecteRelacionat1.data.titol_projecte[0].text }}</h4>
+            <span>{{ ProjecteRelacionat1.data.codi_projecte }}</span></nuxt-link>
           </article>
           <article v-if="ProjecteRelacionat2 != null">
-            <img :src="ProjecteRelacionat2.data.imatge_destacada_1.url">
-            <nuxt-link :to='"/es-es/projecte/"+post.data.projecte_relacionat_2.uid' ><h4>{{ ProjecteRelacionat2.data.titol_projecte[0].text }}</h4></nuxt-link>
-          </article>
-          <article v-if="ProjecteRelacionat3 != null">
-            <img :src="ProjecteRelacionat3.data.imatge_destacada_1.url">
-            <nuxt-link :to='"/es-es/projecte/"+post.data.projecte_relacionat_3.uid' ><h4>{{ ProjecteRelacionat3.data.titol_projecte[0].text }}</h4></nuxt-link>
+            <img :src="ProjecteRelacionat2.data.imatge_quadrada.url">
+            <nuxt-link :to='"/es-es/projecte/"+post.data.projecte_relacionat_2.uid' ><h4>{{ ProjecteRelacionat2.data.titol_projecte[0].text }}</h4>
+            <span>{{ ProjecteRelacionat2.data.codi_projecte }}</span></nuxt-link>
           </article>
         </div>
       </section>
@@ -86,13 +96,11 @@ export default {
         const post = await $prismic.api.getByUID("projectes", params.uid, { lang });
         const ProjecteRelacionat1 = await $prismic.api.getByUID("projectes", post.data.projecte_relacionat_1.uid, { lang });
         const ProjecteRelacionat2 = await $prismic.api.getByUID("projectes", post.data.projecte_relacionat_2.uid, { lang });
-        const ProjecteRelacionat3 = await $prismic.api.getByUID("projectes", post.data.projecte_relacionat_3.uid, { lang });
         await store.dispatch('prismic/load', { lang, page: post })
         return {
             post,
             ProjecteRelacionat1,
             ProjecteRelacionat2,
-            ProjecteRelacionat3,
         };
     },
     data () {
