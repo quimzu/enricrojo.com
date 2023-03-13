@@ -25,7 +25,7 @@
             
         </div>
        
-        <PrismicRichText :field="slice.primary.sigles" />
+        <div><span>{{ slice.primary.sigles[0].text }}</span></div>
       </div>
     </div>
   </section>
@@ -50,7 +50,7 @@
           </template>
         </div>
         
-        <PrismicRichText :field="slice.primary.sigles" />
+        <div><span>{{ slice.primary.sigles[0].text }}</span></div>
       </div>
     </div>
     <div class="columna_dreta">

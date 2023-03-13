@@ -1,5 +1,5 @@
 <template>
-  <Bounded as="header" y-padding="sm">
+  <Bounded class="main" as="header" y-padding="sm">
     <div class="">
       <NuxtLink :to="localePath('/')" class="logo">
 		<PrismicImage :field="settings.data.logo" />

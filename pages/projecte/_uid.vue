@@ -1,10 +1,11 @@
 <template>
-    <main>
+    <article class="detall_projecte">
         
-      <section class="capcalera_detall">
+      <header>
         <PrismicImage class="img_detall" :field="post.data.imatge_detall" />
         <div class="col_info">
-        <div><span>{{ post.data.codi_projecte }}</span></div>
+      <div><span>{{ post.data.codi_projecte }}</span></div>
+      <div class="grupo">
         <svg width="21" height="29" viewBox="0 0 21 29" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M10.4286 1L10.4286 27.4" stroke="#3E3E3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         <path d="M19.8572 10.4286L10.4286 1" stroke="#3E3E3E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -14,11 +15,13 @@
         <PrismicRichText class="titol_projecte" :field="post.data.titol_projecte" />
         <PrismicRichText :field="post.data.descripcio_projecte" />
       </div>
-      </section>
+      </div>
+      </header>
        
 
-
+      <main>
         <SliceZone :slices="post.data.slices" :components="components"/>
+      </main>
       <!--  <template v-if="post.data.slices[0].items[0] != null">
         <div class='slideshow-container'>
           <template v-for="img in post.data.slices[0].items ">
@@ -83,7 +86,7 @@
     </template>
 
 
-    </main>
+  </article>
 </template>
   
 <script>
