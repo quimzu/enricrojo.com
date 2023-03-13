@@ -119,7 +119,7 @@ export default {
      script: [
         {
           hid: 'stripe', 
-          src: '../slider.js', 
+          src: '/slider.js', 
           defer: true,
           body: true,
 
