@@ -2,6 +2,7 @@
   <section class="obertura">
     <div class="obertura_1col">
     <PrismicRichText :field="slice.primary.parrafo_izquierda" />
+    <div>
     <figure class="activo mySlides">
       <PrismicImage :field="slice.primary.imagen_principal" />
     </figure>
@@ -10,6 +11,7 @@
         <PrismicImage :field="item.imagen" />
       </figure>
     </template>
+  </div>
     <PrismicRichText :field="slice.primary.parrafo_derecha" />
     </div>
     <h1 class="titol_obertura">{{slice.primary.titulo[0].text}}</h1>

@@ -1,20 +1,40 @@
 <template>
   <section class="doble_col">
     <template v-if="slice.primary.orientacio_imatge == 'Dreta'">
+      <template v-if="slice.primary.tipus_imatge == 'Horizontal'">
+        <div class="texto_2col">
+          <PrismicRichText :field="slice.primary.text" />
+        </div>
+        <figure>
+            <PrismicImage :field="slice.primary.imatge" />
+        </figure>
+        </template>
+          <template v-else>
+            <div class="texto_2col vertical">
+          <PrismicRichText :field="slice.primary.text" />
+        </div>
+      <figure>
+          <PrismicImage :field="slice.primary.imatge" />
+      </figure>
+        </template>
+    </template>
+    <template v-else>
+      <template v-if="slice.primary.tipus_imatge == 'Horizontal'">
+      <figure>
+          <PrismicImage :field="slice.primary.imatge" />
+      </figure>
       <div class="texto_2col">
         <PrismicRichText :field="slice.primary.text" />
       </div>
-      <figure>
-        <PrismicImage :field="slice.primary.imatge" />
-      </figure>
     </template>
     <template v-else>
       <figure>
-        <PrismicImage :field="slice.primary.imatge" />
+          <PrismicImage :field="slice.primary.imatge" />
       </figure>
-      <div class="texto_2col">
+      <div class="texto_2col vertical">
         <PrismicRichText :field="slice.primary.text" />
       </div>
+    </template>
     </template>
   </section>
 </template>

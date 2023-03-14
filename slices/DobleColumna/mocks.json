@@ -9,7 +9,6 @@
         "type": "Select"
       },
       "imatge": {
-        "__TYPE__": "ImageContent",
         "origin": {
           "id": "main",
           "url": "https://images.unsplash.com/photo-1593642532973-d31b6557fa68",
@@ -27,6 +26,9 @@
           },
           "background": "transparent"
         },
+        "credits": null,
+        "alt": null,
+        "__TYPE__": "ImageContent",
         "thumbnails": {}
       },
       "text": {
@@ -39,6 +41,11 @@
             }
           }
         ]
+      },
+      "tipus_imatge": {
+        "__TYPE__": "FieldContent",
+        "value": "Vertical",
+        "type": "Select"
       }
     },
     "items": [

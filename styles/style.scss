@@ -1,4 +1,6 @@
 
+ $width: 1190px;
+ 
  @font-face {
     font-family: "Manrope";
     src: url('/font/Manrope-Regular.ttf');
@@ -178,7 +180,7 @@ section{
         justify-content: center;
     }
     &.llista_projectes{
-        max-width: 1190px;
+        max-width: $width;
         margin: 0 auto;
     }
     .projectes{
@@ -264,7 +266,7 @@ section{
 
 //Slider
 section.slider{
-    max-width: 1190px;
+    max-width: $width;
     margin: 0 auto;
     position: relative;
     .slideshow-container {
@@ -325,7 +327,7 @@ section.slider{
             text-align: center;
             align-self: center;
             justify-content: space-between;
-            max-width: 1200px;
+            max-width: $width;
             figure{
                 flex-basis: 33%;
                 &.inactivo{
@@ -339,9 +341,11 @@ section.slider{
             div{  
                 flex-basis: 33%;
                 align-self: center;
+                display: flex;
+                justify-content: center;
                 p{
                     font-size: 18px;
-                    max-width: 237px;
+                    flex-basis: 50%;
                 }
             }
     }
@@ -360,49 +364,6 @@ section.slider{
         align-self: center;
     }
 }
-
-//Columna Individual
-
-.indiv_col{
-    max-width: 1190px;
-    margin: 0 auto;
-}
-
-//Doble Columna
-
-section.doble_col{
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    max-width: 1190px;
-    margin: 2em auto;
-    div.texto_2col{
-        align-self: flex-end;
-    }
-}
-
-//Triple Columna
-
-.triple_col{
-    max-width: 1190px;
-    margin: 0 auto;
-    padding: 100px 0;
-    .triple_imgs{
-        display: flex;
-        gap: 20px;
-        
-        img{
-            flex-basis: 33.33%;
-            width: 100%;
-        }
-    }
-    p{
-        padding-top: 45px;
-        padding-left: 350px;
-    }
-    
-}
-
 
 
 //Projecte Destacat
@@ -492,7 +453,7 @@ section.projecte_destacat{
 article.detall_projecte{
     header{
         display: flex;
-        max-width: 1190px;
+        max-width: $width;
         margin: 0 auto;
         .img_detall{
             display: flex;
@@ -528,78 +489,123 @@ article.detall_projecte{
             }
         }
     }
+    //Columna Individual
+
+    .indiv_col{
+        max-width: $width;
+        margin: 0 auto;
+    }
+
+    //Doble Columna
+
+    section.doble_col{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        max-width: $width;
+        margin: 2em auto;
+        div.texto_2col{
+            align-self: flex-end;
+            &.vertical{
+                flex-basis: 45%;
+            }
+        }
+    }
+
+    //Triple Columna
+
+    .triple_col{
+        max-width: $width;
+        margin: 0 auto;
+        padding: 100px 0;
+        .triple_imgs{
+            display: flex;
+            gap: 20px;
+            
+            img{
+                flex-basis: 33.33%;
+                width: 100%;
+            }
+        }
+        p{
+            padding-top: 45px;
+            padding-left: 350px;
+        }
+        
+    }
+
     //Projectes Relacionats
 
-.projectes_relacionats{
-    margin: 0 100px;
-    div.header_proy_relacionats{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        h3{
-            margin-bottom: 0;
-        }
-    }
-    div{
-        gap: 20px;
-        display: flex;
-        justify-content: space-between;
-        article{
-            position: relative;
+    .projectes_relacionats{
+        margin: 0 100px;
+        div.header_proy_relacionats{
             display: flex;
-            a{
-                padding: 20px 0 0 0;
-                text-decoration: none;
-                color: #3E3E3E;
+            flex-direction: column;
+            align-items: center;
+            h3{
+                margin-bottom: 0;
+            }
+        }
+        div{
+            gap: 20px;
+            display: flex;
+            justify-content: space-between;
+            article{
+                position: relative;
                 display: flex;
-                flex-direction: column;
-                align-self: flex-end;
-                font-weight: 400;
-                font-size: 18px;
-                line-height: 25px;
-                letter-spacing: 0.03em;
-                &::before{
-                    content: "";
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    right: 0;
-                    bottom: 0;
-                    z-index: 2;
-                }
-                span{
+                a{
+                    padding: 20px 0 0 0;
+                    text-decoration: none;
+                    color: #3E3E3E;
+                    display: flex;
+                    flex-direction: column;
+                    align-self: flex-end;
                     font-weight: 400;
-                    font-size: 100px;
-                    line-height: 137px;
+                    font-size: 18px;
+                    line-height: 25px;
+                    letter-spacing: 0.03em;
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        z-index: 2;
+                    }
+                    span{
+                        font-weight: 400;
+                        font-size: 100px;
+                        line-height: 137px;
+                    }
                 }
-            }
-            &:first-child{
-                img{
-                    padding-right: 56px;
+                &:first-child{
+                    img{
+                        padding-right: 56px;
+                    }
+                    a{
+                        padding: 20px 0 0 0;
+                        background-image: url(../assets/FlechaGrande_Izquierda.svg);
+                        background-repeat: no-repeat;
+                    }
+                    
                 }
-                a{
-                    padding: 20px 0 0 0;
-                    background-image: url(../assets/FlechaGrande_Izquierda.svg);
-                    background-repeat: no-repeat;
-                }
-                
-            }
-            &:last-child{
-                img{
-                    order: 1;
-                    padding-left: 56px;
-                }
-                a{
-                    padding: 20px 0 0 0;
-                    background-image: url(../assets/FlechaGrande_Derecha.svg);
-                    background-repeat: no-repeat;
-                    background-position-x: right;
-                    text-align: right;
+                &:last-child{
+                    img{
+                        order: 1;
+                        padding-left: 56px;
+                    }
+                    a{
+                        padding: 20px 0 0 0;
+                        background-image: url(../assets/FlechaGrande_Derecha.svg);
+                        background-repeat: no-repeat;
+                        background-position-x: right;
+                        text-align: right;
+                    }
                 }
             }
         }
     }
-}
 }
 
 

@@ -23,6 +23,17 @@
             "default_value": "Dreta"
           }
         },
+        "tipus_imatge": {
+          "type": "Select",
+          "config": {
+            "label": "Tipus Imatge",
+            "placeholder": "",
+            "options": [
+              "Horizontal",
+              "Vertical"
+            ]
+          }
+        },
         "imatge": {
           "type": "Image",
           "config": {
