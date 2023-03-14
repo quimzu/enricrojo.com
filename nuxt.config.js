@@ -44,6 +44,15 @@ export default async () => {
       '@nuxtjs/sitemap',
       /* Load Prismic module after i18n module to prevent extend route concurrency */ '@nuxtjs/prismic'
     ],
+    sitemap: [
+      {
+        path: "/sitemap-pages.xml",
+        routes: async () => {
+          const pages = await getData("page");
+          return [...pages.map((i) => `/${i.uid}`)];
+        },
+      },
+    ],
     plugins: [
       '~/plugins/gtm',
     ],
