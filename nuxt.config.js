@@ -41,7 +41,6 @@ export default async () => {
     modules: [
       '@nuxtjs/i18n',
       '@nuxtjs/gtm',
-      '@nuxtjs/sitemap',
       /* Load Prismic module after i18n module to prevent extend route concurrency */ '@nuxtjs/prismic'
     ],
     plugins: [
